@@ -1,0 +1,68 @@
+2023-06-22 12:04:42 - Session Worker - INFO - Sessions data file data/Sessions.csv does not exist.
+2023-06-22 12:04:42 - Session Worker - INFO - Performing default query from 1970-01-01 00:00:00(UTC) to 2023-06-22 19:04:42(UTC)
+2023-06-22 12:11:20 - Session Worker - INFO - Query completed.
+2023-06-22 12:11:20 - Session Worker - INFO - Found 34491 row(s) of new data from 1970-01-01 00:00:00(UTC) to 2023-06-22 19:04:42.552274(UTC).
+2023-06-22 12:11:20 - Session Worker - INFO - Sessions data has been saved to data/Sessions.csv.
+2023-06-22 12:11:33 - Session Worker - INFO - No new data found. Queried at 2023-06-22 12:11:33(PST)
+2023-07-03 11:16:17 - Session Worker - INFO - Sessions data file data/Sessions.csv does not exist.
+2023-07-03 11:16:17 - Session Worker - INFO - Performing default query from 1970-01-01 00:00:00(UTC) to 2023-07-03 18:16:17(UTC)
+2023-07-03 11:24:31 - Session Worker - INFO - Query completed.
+2023-07-03 11:24:31 - Session Worker - INFO - Found 34944 row(s) of new data from 1970-01-01 00:00:00(UTC) to 2023-07-03 18:16:17.548108(UTC).
+2023-07-03 11:24:31 - Session Worker - INFO - Sessions data has been saved to data/Sessions.csv.
+2023-07-12 22:59:36 - Session Worker - INFO - Found 475 row(s) of new data from 2023-07-03 11:05:29(UTC) to 2023-07-12 22:53:32(UTC).
+2023-07-12 22:59:37 - Session Worker - INFO - Data merged. Old size: 34944, New size: 35419.
+2023-07-13 22:15:09 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-13 22:15:10 - Session Worker - INFO - Data merged. Old size: 35419, New size: 35486.
+2023-07-13 22:19:25 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-13 22:19:26 - Session Worker - INFO - No new data found. Queried at 2023-07-13 22:19:26(PST)
+2023-07-13 22:27:00 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-13 22:27:01 - Session Worker - INFO - Data merged. Old size: 35486, New size: 35487.
+2023-07-13 22:32:45 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-13 22:32:47 - Session Worker - INFO - No new data found. Queried at 2023-07-13 22:32:47(PST)
+2023-07-17 10:29:50 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-17 10:29:51 - Session Worker - INFO - Data merged. Old size: 35487, New size: 35618.
+2023-07-17 10:34:06 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-17 10:34:10 - Session Worker - INFO - No new data found.
+2023-07-17 12:43:24 - Session Worker - INFO - Sessions data file data/Sessions.csv does not exist.
+2023-07-17 12:43:24 - Session Worker - INFO - Performing a default query from 1970-01-01 00:00:00(UTC) to 2023-07-17 19:43:24(UTC)
+2023-07-17 12:52:42 - Session Worker - ERROR - An exception occurred: Server returned response (200) with invalid XML: Invalid XML content received (Start tag expected, '<' not found, line 1, column 1).
+Content: b'{"result":false,"content":{"error_message":"read error on connection to nos-main-redis.us.prod.chargepoint.local:6379"},"total_results":0}'
+2023-07-17 13:17:56 - Session Worker - INFO - Sessions data file data/Sessions.csv does not exist.
+2023-07-17 13:17:56 - Session Worker - INFO - Performing a default query from 1970-01-01 00:00:00(UTC) to 2023-07-17 20:17:56(UTC)
+2023-07-17 13:36:05 - Session Worker - INFO - Query completed.
+2023-07-17 13:36:05 - Session Worker - INFO - Found 179466 row(s) of new data from 1970-01-01 00:00:00(UTC) to 2023-07-17 20:17:56.036543(UTC).
+2023-07-17 13:36:05 - Session Worker - INFO - Sessions data has been saved to data/Sessions.csv.
+2023-07-18 11:21:26 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-18 11:21:28 - Session Worker - INFO - Data merged. Old size: 179466, New size: 36311.
+2023-07-19 10:40:46 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-19 10:40:47 - Session Worker - INFO - Data merged. Old size: 36311, New size: 36362.
+2023-07-20 13:25:26 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-20 13:25:28 - Session Worker - INFO - Data merged. Old size: 36362, New size: 36426.
+2023-07-20 13:25:28 - Session Worker - ERROR - An exception occurred: No section: 'Paths'
+2023-07-20 13:29:12 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-20 13:29:14 - Session Worker - INFO - Data merged. Old size: 36426, New size: 36427.
+2023-07-20 13:29:16 - Session Worker - INFO - Anomalies saved.
+2023-07-21 13:56:57 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-21 13:56:59 - Session Worker - INFO - Data merged. Old size: 36427, New size: 36481.
+2023-07-21 13:57:02 - Session Worker - INFO - Anomalies saved.
+2023-07-27 14:43:27 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-27 14:43:29 - Session Worker - INFO - Data merged. Old size: 36481, New size: 36784.
+2023-07-27 14:43:32 - Session Worker - INFO - Anomalies saved.
+2023-07-28 13:06:04 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-07-28 13:06:06 - Session Worker - INFO - Data merged. Old size: 36784, New size: 36825.
+2023-07-28 13:06:09 - Session Worker - INFO - Anomalies saved.
+2023-08-03 10:54:53 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2023-08-03 10:54:55 - Session Worker - INFO - Data merged. Old size: 36825, New size: 36974.
+2023-08-03 10:54:57 - Session Worker - INFO - Anomalies saved.
+2025-04-17 11:50:00 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 11:50:00 - Session Worker - ERROR - An exception occurred: UsernameToken processing failed
+2025-04-17 12:03:29 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 12:03:29 - Session Worker - ERROR - An exception occurred: UsernameToken processing failed
+2025-04-17 12:31:28 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 12:31:28 - Session Worker - ERROR - An exception occurred: UsernameToken processing failed
+2025-04-17 14:04:04 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 14:08:41 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 14:16:35 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 14:21:40 - Session Worker - INFO - Historical data Found in data/Sessions.csv.
+2025-04-17 14:27:17 - Session Worker - INFO - Data merged. Old size: 36974, New size: 66009.
+2025-04-17 14:27:22 - Session Worker - INFO - Anomalies saved.

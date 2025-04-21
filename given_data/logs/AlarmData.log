@@ -1,0 +1,36 @@
+2023-07-13 17:28:19 - Alarm Worker - INFO - Alarms data file data/Alarms.csv does not exist.
+2023-07-13 17:28:19 - Alarm Worker - INFO - Performing a default query from 2023-07-01 00:00:00(UTC) to 2023-07-02 00:00:00(UTC)
+2023-07-13 17:28:54 - Alarm Worker - INFO - Query completed.
+2023-07-13 17:28:54 - Alarm Worker - INFO - Found 2 row(s) of new data from 2023-07-01 00:32:38(UTC) to 2023-07-01 00:35:13(UTC).
+2023-07-13 17:28:54 - Alarm Worker - INFO - Alarms data has been saved to data/Alarms.csv.
+
+2023-07-13 22:32:44 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-13 22:33:32 - Alarm Worker - INFO - Data merged. Old size: 10575, New size: 10575.
+2023-07-17 10:34:06 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-17 10:34:37 - Alarm Worker - INFO - Data merged. Old size: 10575, New size: 10600.
+2023-07-18 11:21:26 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-18 11:21:55 - Alarm Worker - INFO - Data merged. Old size: 10600, New size: 10602.
+2023-07-19 10:40:45 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-19 10:41:15 - Alarm Worker - INFO - Data merged. Old size: 10602, New size: 10608.
+2023-07-20 13:25:26 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-20 13:25:57 - Alarm Worker - INFO - Data merged. Old size: 10608, New size: 10633.
+2023-07-20 13:29:12 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-20 13:29:43 - Alarm Worker - INFO - No new data found.
+2023-07-21 13:56:57 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-21 13:57:30 - Alarm Worker - INFO - Data merged. Old size: 10633, New size: 10646.
+2023-07-27 15:05:05 - Alarm Worker - INFO - Data merged. Old size: 10646, New size: 10693.
+2023-07-28 13:06:04 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-07-28 13:06:39 - Alarm Worker - INFO - Data merged. Old size: 10693, New size: 10696.
+2023-08-03 10:54:53 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2023-08-03 10:55:48 - Alarm Worker - INFO - Data merged. Old size: 10696, New size: 10733.
+2025-04-17 11:50:00 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 12:03:29 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 12:31:28 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 14:04:04 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 14:05:48 - Alarm Worker - INFO - Data merged. Old size: 10733, New size: 17820.
+2025-04-17 14:08:41 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 14:08:42 - Alarm Worker - INFO - No new data found.
+2025-04-17 14:16:35 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 14:16:36 - Alarm Worker - INFO - No new data found.
+2025-04-17 14:21:39 - Alarm Worker - INFO - Historical data Found in data/Alarms.csv.
+2025-04-17 14:21:40 - Alarm Worker - INFO - No new data found.
