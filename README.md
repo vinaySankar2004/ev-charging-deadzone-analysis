@@ -76,10 +76,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
 ## Analysis Approach
 
 1. **Utilisation‑rate calculation**  
-   $$
-   \text{Utilisation Rate}
-   = \frac{\text{Chargers in use}}{\text{Total chargers}}\times100
-   $$
+   Utilisation Rate = (Chargers in use / Total chargers) × 100
    - Compute hourly rates for every station.
    - Aggregate by hour‑of‑day, day‑of‑week, and station — only over days when that station was active.
    - Mark any hour < X % utilisation as a candidate “deadzone.”
@@ -89,10 +86,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
    - Map these windows network‑wide (weekday vs. weekend).
 
 3. **Reliability assessment (future)**  
-   \[
-   \text{Reliability Index}
-   = \frac{\text{Days deadzone occurs}}{\text{Total days observed}}\times100
-   ]/
+   Reliability Index = (Days deadzone occurs / Total days observed) × 100
    - Rate each deadzone; prioritise those ≥ Z %.
    - Produce a ranked list of high‑reliability charging opportunities.
 
@@ -100,7 +94,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
 
 ## Results
 
-The analysis produced three sets of station‑level visuals for all 32 stations (linked in the [Slide Deck](https://github.com/your_username/your_repo_placeholder)):
+The analysis produced three sets of station‑level visuals for all 32 stations (linked in the [Slide Deck](https://github.com/vinaySankar2004/ev-charging-deadzone-analysis/blob/main/docs/Deadzone%20Analysis%20Results.pdf)):
 
 1. **Station Heatmaps**
    - A 7×24 heatmap per station (hours × days), colored by average utilization rate.
@@ -116,7 +110,7 @@ The analysis produced three sets of station‑level visuals for all 32 stations 
    - Guarantees exactly five records per station in each category.
 
 🔗 **Git Repository**  
-Git repo containing source code as well as a full slide deck of results with one page per station (32 slides) is available here: https://github.com/your_username/your_repo_placeholder
+Git repo containing source code as well as a full slide deck of results with one page per station (32 slides) is available here: https://github.com/vinaySankar2004/ev-charging-deadzone-analysis
 
 ---
 
