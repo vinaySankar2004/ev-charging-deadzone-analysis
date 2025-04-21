@@ -172,3 +172,16 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Byte‑compiled / caches
+*.ipynb_checkpoints/
+
+# Virtual environments
+.env/
+./idea
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+

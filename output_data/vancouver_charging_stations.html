@@ -1,0 +1,3434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_daa1d03ad5cfc03dd36f40b5470276f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 20px; left: 20px;
+            border:2px solid grey; background:white;
+            padding:8px; font-size:12px; border-radius:5px; z-index:9999;">
+  <b>Color Key:</b><br>
+  <i class="fa fa-bolt" style="color:red"></i> Top 5 &nbsp;
+  <i class="fa fa-bolt" style="color:orange"></i> 6–10 &nbsp;
+  <i class="fa fa-bolt" style="color:blue"></i> 11–20 &nbsp;
+  <i class="fa fa-bolt" style="color:green"></i> Other
+</div>
+    
+            <div class="folium-map" id="map_daa1d03ad5cfc03dd36f40b5470276f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_daa1d03ad5cfc03dd36f40b5470276f1 = L.map(
+                "map_daa1d03ad5cfc03dd36f40b5470276f1",
+                {
+                    center: [49.26752544685228, -122.91126138765898],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c01254b1571118198778e61dba6d884 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4c01254b1571118198778e61dba6d884.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+            var feature_group_0baea566db0772029655da30d10127a3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cb0bb771f486a4f3056a1f23fb2197f4 = L.marker(
+                [49.27806955715426, -122.91203807404098],
+                {
+}
+            ).addTo(feature_group_0baea566db0772029655da30d10127a3);
+        
+    
+            var icon_5e274d622e590520ae325c836558e8a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0198b8bde3ae4900fba99f8f3b089f4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a5c66b704368debb3189835db4c766f = $(`<div id="html_8a5c66b704368debb3189835db4c766f" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 1 of 64<br><b>Sessions:</b> 13195<br><b>Address:</b> 8915 Cornerstone Mews, Burnaby, British Columbia, V5A 4Y6, Canada</div>`)[0];
+                popup_0198b8bde3ae4900fba99f8f3b089f4a.setContent(html_8a5c66b704368debb3189835db4c766f);
+            
+        
+
+        marker_cb0bb771f486a4f3056a1f23fb2197f4.bindPopup(popup_0198b8bde3ae4900fba99f8f3b089f4a)
+        ;
+
+        
+    
+    
+            marker_cb0bb771f486a4f3056a1f23fb2197f4.bindTooltip(
+                `<div>
+                     #1:  (13195 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb0bb771f486a4f3056a1f23fb2197f4.setIcon(icon_5e274d622e590520ae325c836558e8a1);
+            
+    
+            var marker_4dd0c252cbee9342da9fbe3b149788e1 = L.marker(
+                [49.27806955715426, -122.91203807404098],
+                {
+}
+            ).addTo(feature_group_0baea566db0772029655da30d10127a3);
+        
+    
+            var icon_9ac16ef11890cfee827616974fa735f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e92b8623466dfce068a703f2833ce36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0f0989991d83ed6611276586dc3f81f = $(`<div id="html_d0f0989991d83ed6611276586dc3f81f" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 1 of 64<br><b>Sessions:</b> 13195<br><b>Address:</b> 8915 Cornerstone Mews, Burnaby, British Columbia, V5A 4Y6, Canada</div>`)[0];
+                popup_2e92b8623466dfce068a703f2833ce36.setContent(html_d0f0989991d83ed6611276586dc3f81f);
+            
+        
+
+        marker_4dd0c252cbee9342da9fbe3b149788e1.bindPopup(popup_2e92b8623466dfce068a703f2833ce36)
+        ;
+
+        
+    
+    
+            marker_4dd0c252cbee9342da9fbe3b149788e1.bindTooltip(
+                `<div>
+                     #1:  (13195 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4dd0c252cbee9342da9fbe3b149788e1.setIcon(icon_9ac16ef11890cfee827616974fa735f1);
+            
+    
+            var marker_ee4b505ff26af4c57059bff27cdc3536 = L.marker(
+                [49.27380817107044, -122.9122931912351],
+                {
+}
+            ).addTo(feature_group_0baea566db0772029655da30d10127a3);
+        
+    
+            var icon_92a8cfe7720287ddbe87f2dcc3b8bc64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96b311b5a5c4245f63f8215c589df8a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0cb992b5a252187ad37d6af315d8ed7 = $(`<div id="html_a0cb992b5a252187ad37d6af315d8ed7" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 5 of 64<br><b>Sessions:</b> 6600<br><b>Address:</b> 8999 Nelson Way, Burnaby, British Columbia, V5G 4N2, Canada</div>`)[0];
+                popup_96b311b5a5c4245f63f8215c589df8a3.setContent(html_a0cb992b5a252187ad37d6af315d8ed7);
+            
+        
+
+        marker_ee4b505ff26af4c57059bff27cdc3536.bindPopup(popup_96b311b5a5c4245f63f8215c589df8a3)
+        ;
+
+        
+    
+    
+            marker_ee4b505ff26af4c57059bff27cdc3536.bindTooltip(
+                `<div>
+                     #5:  (6600 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee4b505ff26af4c57059bff27cdc3536.setIcon(icon_92a8cfe7720287ddbe87f2dcc3b8bc64);
+            
+    
+            var marker_8db61fcaac89de0057226a395bf919db = L.marker(
+                [49.27380817107044, -122.9122931912351],
+                {
+}
+            ).addTo(feature_group_0baea566db0772029655da30d10127a3);
+        
+    
+            var icon_e6688536ad3c6cb556eb7bfbae2f29c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7af47e74f83fbecd064f194f979eceb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2f5bf577244cd79561768c1adbedffa = $(`<div id="html_b2f5bf577244cd79561768c1adbedffa" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 5 of 64<br><b>Sessions:</b> 6600<br><b>Address:</b> 8999 Nelson Way, Burnaby, British Columbia, V5G 4N2, Canada</div>`)[0];
+                popup_7af47e74f83fbecd064f194f979eceb3.setContent(html_b2f5bf577244cd79561768c1adbedffa);
+            
+        
+
+        marker_8db61fcaac89de0057226a395bf919db.bindPopup(popup_7af47e74f83fbecd064f194f979eceb3)
+        ;
+
+        
+    
+    
+            marker_8db61fcaac89de0057226a395bf919db.bindTooltip(
+                `<div>
+                     #5:  (6600 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8db61fcaac89de0057226a395bf919db.setIcon(icon_e6688536ad3c6cb556eb7bfbae2f29c8);
+            
+    
+            var marker_0e65d567c443423a4d1142ea6f98e902 = L.marker(
+                [49.2797337375215, -122.92418284890641],
+                {
+}
+            ).addTo(feature_group_0baea566db0772029655da30d10127a3);
+        
+    
+            var icon_5e48a1c9078d60ff97ef49db295fe2db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b5f09bfa3fc9410924940d9c121753a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_910ec3a0aa0acae329c770b219cb9610 = $(`<div id="html_910ec3a0aa0acae329c770b219cb9610" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 3 of 64<br><b>Sessions:</b> 10380<br><b>Address:</b> 8888 University Drive, Burnaby, British Columbia, V5A1S6, Canada</div>`)[0];
+                popup_1b5f09bfa3fc9410924940d9c121753a.setContent(html_910ec3a0aa0acae329c770b219cb9610);
+            
+        
+
+        marker_0e65d567c443423a4d1142ea6f98e902.bindPopup(popup_1b5f09bfa3fc9410924940d9c121753a)
+        ;
+
+        
+    
+    
+            marker_0e65d567c443423a4d1142ea6f98e902.bindTooltip(
+                `<div>
+                     #3:  (10380 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e65d567c443423a4d1142ea6f98e902.setIcon(icon_5e48a1c9078d60ff97ef49db295fe2db);
+            
+    
+            var marker_aaa760f2cedaec7dbce437df2b6c08dd = L.marker(
+                [49.2797337375215, -122.92418284890641],
+                {
+}
+            ).addTo(feature_group_0baea566db0772029655da30d10127a3);
+        
+    
+            var icon_08584977fd6279672f89df7b7b65b7c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbc4b9cb3add5bdae2f711efc187304a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2781dcdedda5a75f2c0a12e105f30c55 = $(`<div id="html_2781dcdedda5a75f2c0a12e105f30c55" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 3 of 64<br><b>Sessions:</b> 10380<br><b>Address:</b> 8888 University Drive, Burnaby, British Columbia, V5A1S6, Canada</div>`)[0];
+                popup_bbc4b9cb3add5bdae2f711efc187304a.setContent(html_2781dcdedda5a75f2c0a12e105f30c55);
+            
+        
+
+        marker_aaa760f2cedaec7dbce437df2b6c08dd.bindPopup(popup_bbc4b9cb3add5bdae2f711efc187304a)
+        ;
+
+        
+    
+    
+            marker_aaa760f2cedaec7dbce437df2b6c08dd.bindTooltip(
+                `<div>
+                     #3:  (10380 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aaa760f2cedaec7dbce437df2b6c08dd.setIcon(icon_08584977fd6279672f89df7b7b65b7c2);
+            
+    
+            feature_group_0baea566db0772029655da30d10127a3.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+            var feature_group_9f1d504aef7f89671363834282a9ba69 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_57c518ca866b9a279dc42b98140df6af = L.marker(
+                [49.27771702276839, -122.91213180555722],
+                {
+}
+            ).addTo(feature_group_9f1d504aef7f89671363834282a9ba69);
+        
+    
+            var icon_d3288f66807eb1ddaa0d96054b81c882 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17533c5e71009bef27e261d4873ed4af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e7a9c4f69a7f32afb392cf1755d49ef = $(`<div id="html_9e7a9c4f69a7f32afb392cf1755d49ef" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / EAST LOT<br><b>Rank:</b> 7 of 64<br><b>Sessions:</b> 5585<br><b>Address:</b> 8911 Cornerstone Mews </div>`)[0];
+                popup_17533c5e71009bef27e261d4873ed4af.setContent(html_9e7a9c4f69a7f32afb392cf1755d49ef);
+            
+        
+
+        marker_57c518ca866b9a279dc42b98140df6af.bindPopup(popup_17533c5e71009bef27e261d4873ed4af)
+        ;
+
+        
+    
+    
+            marker_57c518ca866b9a279dc42b98140df6af.bindTooltip(
+                `<div>
+                     #7: SFU / EAST LOT (5585 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57c518ca866b9a279dc42b98140df6af.setIcon(icon_d3288f66807eb1ddaa0d96054b81c882);
+            
+    
+            var marker_db5c219cb2555d4e6f701a144a1007be = L.marker(
+                [49.27771702276839, -122.91213180555722],
+                {
+}
+            ).addTo(feature_group_9f1d504aef7f89671363834282a9ba69);
+        
+    
+            var icon_bb047961900ee1c5c2a63c5e6b18be48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02bd45987648bdf19bd974f9c61c147e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e931267d4835a3d2de65cb710477d526 = $(`<div id="html_e931267d4835a3d2de65cb710477d526" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / EAST LOT<br><b>Rank:</b> 7 of 64<br><b>Sessions:</b> 5585<br><b>Address:</b> 8911 Cornerstone Mews </div>`)[0];
+                popup_02bd45987648bdf19bd974f9c61c147e.setContent(html_e931267d4835a3d2de65cb710477d526);
+            
+        
+
+        marker_db5c219cb2555d4e6f701a144a1007be.bindPopup(popup_02bd45987648bdf19bd974f9c61c147e)
+        ;
+
+        
+    
+    
+            marker_db5c219cb2555d4e6f701a144a1007be.bindTooltip(
+                `<div>
+                     #7: SFU / EAST LOT (5585 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db5c219cb2555d4e6f701a144a1007be.setIcon(icon_bb047961900ee1c5c2a63c5e6b18be48);
+            
+    
+            var marker_a4df595e09feba0b0bfc114018bbef75 = L.marker(
+                [49.2741413380922, -122.9123179180054],
+                {
+}
+            ).addTo(feature_group_9f1d504aef7f89671363834282a9ba69);
+        
+    
+            var icon_1184fa1108de88b29bf3fb508937cd0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40ad35671323c864287469dd661166df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_302657cf6ff087660112f0b59452f9e6 = $(`<div id="html_302657cf6ff087660112f0b59452f9e6" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / DISCOVERY<br><b>Rank:</b> 9 of 64<br><b>Sessions:</b> 5067<br><b>Address:</b> 8999 Nelson Way </div>`)[0];
+                popup_40ad35671323c864287469dd661166df.setContent(html_302657cf6ff087660112f0b59452f9e6);
+            
+        
+
+        marker_a4df595e09feba0b0bfc114018bbef75.bindPopup(popup_40ad35671323c864287469dd661166df)
+        ;
+
+        
+    
+    
+            marker_a4df595e09feba0b0bfc114018bbef75.bindTooltip(
+                `<div>
+                     #9: SFU / DISCOVERY (5067 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4df595e09feba0b0bfc114018bbef75.setIcon(icon_1184fa1108de88b29bf3fb508937cd0b);
+            
+    
+            var marker_394e33179c7176833bdff05edf933dab = L.marker(
+                [49.2741413380922, -122.9123179180054],
+                {
+}
+            ).addTo(feature_group_9f1d504aef7f89671363834282a9ba69);
+        
+    
+            var icon_846d2f60d35ce915396911d2a7c5fa38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_854eeaf391f41511fb9277d538c85d51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c3d4ed7fb018d484f9e3eb232265725 = $(`<div id="html_1c3d4ed7fb018d484f9e3eb232265725" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / DISCOVERY<br><b>Rank:</b> 9 of 64<br><b>Sessions:</b> 5067<br><b>Address:</b> 8999 Nelson Way </div>`)[0];
+                popup_854eeaf391f41511fb9277d538c85d51.setContent(html_1c3d4ed7fb018d484f9e3eb232265725);
+            
+        
+
+        marker_394e33179c7176833bdff05edf933dab.bindPopup(popup_854eeaf391f41511fb9277d538c85d51)
+        ;
+
+        
+    
+    
+            marker_394e33179c7176833bdff05edf933dab.bindTooltip(
+                `<div>
+                     #9: SFU / DISCOVERY (5067 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_394e33179c7176833bdff05edf933dab.setIcon(icon_846d2f60d35ce915396911d2a7c5fa38);
+            
+    
+            feature_group_9f1d504aef7f89671363834282a9ba69.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+            var feature_group_57c019163de2c8a50c05fff6370819f3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_2d80eaa66dbe52a13f7678b0e50e5c49 = L.marker(
+                [49.279797435044685, -122.92290898724556],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_a7ec85a9cb72dd5bf4cb3d1388172884 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cc19fb7525f07e61efa9c332945768b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3eac5a676bef01cd49e730e7241fa96 = $(`<div id="html_f3eac5a676bef01cd49e730e7241fa96" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-05<br><b>Rank:</b> 15 of 64<br><b>Sessions:</b> 2184<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_5cc19fb7525f07e61efa9c332945768b.setContent(html_f3eac5a676bef01cd49e730e7241fa96);
+            
+        
+
+        marker_2d80eaa66dbe52a13f7678b0e50e5c49.bindPopup(popup_5cc19fb7525f07e61efa9c332945768b)
+        ;
+
+        
+    
+    
+            marker_2d80eaa66dbe52a13f7678b0e50e5c49.bindTooltip(
+                `<div>
+                     #15: SFU / SFU WMC 7000-05 (2184 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d80eaa66dbe52a13f7678b0e50e5c49.setIcon(icon_a7ec85a9cb72dd5bf4cb3d1388172884);
+            
+    
+            var marker_bed9868556ad115bbd59309bf62678e8 = L.marker(
+                [49.279797435044685, -122.92290898724556],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_c8d47b720bf542792b387b3232934ed7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b933b06ea3c2752247d431d7b90bb73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_668db278af6262ddd42cb7fddb94277b = $(`<div id="html_668db278af6262ddd42cb7fddb94277b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-05<br><b>Rank:</b> 15 of 64<br><b>Sessions:</b> 2184<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_4b933b06ea3c2752247d431d7b90bb73.setContent(html_668db278af6262ddd42cb7fddb94277b);
+            
+        
+
+        marker_bed9868556ad115bbd59309bf62678e8.bindPopup(popup_4b933b06ea3c2752247d431d7b90bb73)
+        ;
+
+        
+    
+    
+            marker_bed9868556ad115bbd59309bf62678e8.bindTooltip(
+                `<div>
+                     #15: SFU / SFU WMC 7000-05 (2184 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bed9868556ad115bbd59309bf62678e8.setIcon(icon_c8d47b720bf542792b387b3232934ed7);
+            
+    
+            var marker_adb4d0a0500762951ce10e228819beb2 = L.marker(
+                [49.27977833611071, -122.9228700955536],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_9d4e31175106c73f418a5995148fbbc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3968f0e58d4e3d11174fa420f2345717 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8873de102bd3dc1f165057370a146551 = $(`<div id="html_8873de102bd3dc1f165057370a146551" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-03<br><b>Rank:</b> 13 of 64<br><b>Sessions:</b> 2449<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_3968f0e58d4e3d11174fa420f2345717.setContent(html_8873de102bd3dc1f165057370a146551);
+            
+        
+
+        marker_adb4d0a0500762951ce10e228819beb2.bindPopup(popup_3968f0e58d4e3d11174fa420f2345717)
+        ;
+
+        
+    
+    
+            marker_adb4d0a0500762951ce10e228819beb2.bindTooltip(
+                `<div>
+                     #13: SFU / SFU WMC 7000-03 (2449 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_adb4d0a0500762951ce10e228819beb2.setIcon(icon_9d4e31175106c73f418a5995148fbbc7);
+            
+    
+            var marker_b1cbc1e0554bbdfa4707352a1c48b3b0 = L.marker(
+                [49.27977833611071, -122.9228700955536],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_7c21fa15984dd5cce1a89a49a6648799 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edfd008e651e15915a0ebdaedf1a1566 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec6af341310d48c90e9e38396c0c6bc7 = $(`<div id="html_ec6af341310d48c90e9e38396c0c6bc7" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-03<br><b>Rank:</b> 13 of 64<br><b>Sessions:</b> 2449<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_edfd008e651e15915a0ebdaedf1a1566.setContent(html_ec6af341310d48c90e9e38396c0c6bc7);
+            
+        
+
+        marker_b1cbc1e0554bbdfa4707352a1c48b3b0.bindPopup(popup_edfd008e651e15915a0ebdaedf1a1566)
+        ;
+
+        
+    
+    
+            marker_b1cbc1e0554bbdfa4707352a1c48b3b0.bindTooltip(
+                `<div>
+                     #13: SFU / SFU WMC 7000-03 (2449 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1cbc1e0554bbdfa4707352a1c48b3b0.setIcon(icon_7c21fa15984dd5cce1a89a49a6648799);
+            
+    
+            var marker_626a61e48dc1d39202259e55dcfcef36 = L.marker(
+                [49.27971374303956, -122.92241765560304],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_bbd011028f2aec67dd1d9ebc7d5e85ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0cff862c69c14b9bd212075e5fc4581 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67affe750f1bfe02ee8f6bfe384a840b = $(`<div id="html_67affe750f1bfe02ee8f6bfe384a840b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-01<br><b>Rank:</b> 19 of 64<br><b>Sessions:</b> 1911<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_d0cff862c69c14b9bd212075e5fc4581.setContent(html_67affe750f1bfe02ee8f6bfe384a840b);
+            
+        
+
+        marker_626a61e48dc1d39202259e55dcfcef36.bindPopup(popup_d0cff862c69c14b9bd212075e5fc4581)
+        ;
+
+        
+    
+    
+            marker_626a61e48dc1d39202259e55dcfcef36.bindTooltip(
+                `<div>
+                     #19: SFU / SFU WMC 7000-01 (1911 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_626a61e48dc1d39202259e55dcfcef36.setIcon(icon_bbd011028f2aec67dd1d9ebc7d5e85ce);
+            
+    
+            var marker_38b4d2946c124db40b15fb0faa552bc0 = L.marker(
+                [49.27971374303956, -122.92241765560304],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_2fc4c4a64193bed42390d1d75ce7f73d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0e562699f07d28e715280725f2e7c68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a99e19b7562611d9930a1eb7b148fb0 = $(`<div id="html_4a99e19b7562611d9930a1eb7b148fb0" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-01<br><b>Rank:</b> 19 of 64<br><b>Sessions:</b> 1911<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_b0e562699f07d28e715280725f2e7c68.setContent(html_4a99e19b7562611d9930a1eb7b148fb0);
+            
+        
+
+        marker_38b4d2946c124db40b15fb0faa552bc0.bindPopup(popup_b0e562699f07d28e715280725f2e7c68)
+        ;
+
+        
+    
+    
+            marker_38b4d2946c124db40b15fb0faa552bc0.bindTooltip(
+                `<div>
+                     #19: SFU / SFU WMC 7000-01 (1911 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38b4d2946c124db40b15fb0faa552bc0.setIcon(icon_2fc4c4a64193bed42390d1d75ce7f73d);
+            
+    
+            var marker_68570d31ac8b222c97e9ea6bffe5dd14 = L.marker(
+                [49.27977643766686, -122.922896917305],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_6cfc074554b9e2cbbeca5e53716e5706 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e834942e230c3b00803afe497c85070b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2266ae12ce077ced141d1fe614b2476a = $(`<div id="html_2266ae12ce077ced141d1fe614b2476a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-07<br><b>Rank:</b> 17 of 64<br><b>Sessions:</b> 2031<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_e834942e230c3b00803afe497c85070b.setContent(html_2266ae12ce077ced141d1fe614b2476a);
+            
+        
+
+        marker_68570d31ac8b222c97e9ea6bffe5dd14.bindPopup(popup_e834942e230c3b00803afe497c85070b)
+        ;
+
+        
+    
+    
+            marker_68570d31ac8b222c97e9ea6bffe5dd14.bindTooltip(
+                `<div>
+                     #17: SFU / SFU WMC 7000-07 (2031 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_68570d31ac8b222c97e9ea6bffe5dd14.setIcon(icon_6cfc074554b9e2cbbeca5e53716e5706);
+            
+    
+            var marker_a02f3706215479017842008b7d60bad9 = L.marker(
+                [49.27977643766686, -122.922896917305],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_59d547630750313d3437992154fef7ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02e7b1c4758c394c269c5bdc37f4ad62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83451c2176f4a27919e9faff4cacaa2a = $(`<div id="html_83451c2176f4a27919e9faff4cacaa2a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-07<br><b>Rank:</b> 17 of 64<br><b>Sessions:</b> 2031<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_02e7b1c4758c394c269c5bdc37f4ad62.setContent(html_83451c2176f4a27919e9faff4cacaa2a);
+            
+        
+
+        marker_a02f3706215479017842008b7d60bad9.bindPopup(popup_02e7b1c4758c394c269c5bdc37f4ad62)
+        ;
+
+        
+    
+    
+            marker_a02f3706215479017842008b7d60bad9.bindTooltip(
+                `<div>
+                     #17: SFU / SFU WMC 7000-07 (2031 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a02f3706215479017842008b7d60bad9.setIcon(icon_59d547630750313d3437992154fef7ff);
+            
+    
+            var marker_6da0e6efed897151037f643c46531753 = L.marker(
+                [49.27380817107044, -122.91220736054855],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_34c73e71bc8dd500068d6666c1bbec0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a499df9b280f5f67ce7bc1a6d615d03d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b70aa2815d0c82beea62ee33add99cee = $(`<div id="html_b70aa2815d0c82beea62ee33add99cee" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 11 of 64<br><b>Sessions:</b> 3464<br><b>Address:</b> 8999 Nelson Way, Burnaby, British Columbia, V5A 4W9, Canada</div>`)[0];
+                popup_a499df9b280f5f67ce7bc1a6d615d03d.setContent(html_b70aa2815d0c82beea62ee33add99cee);
+            
+        
+
+        marker_6da0e6efed897151037f643c46531753.bindPopup(popup_a499df9b280f5f67ce7bc1a6d615d03d)
+        ;
+
+        
+    
+    
+            marker_6da0e6efed897151037f643c46531753.bindTooltip(
+                `<div>
+                     #11:  (3464 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6da0e6efed897151037f643c46531753.setIcon(icon_34c73e71bc8dd500068d6666c1bbec0a);
+            
+    
+            var marker_b9e2d696d53185212cc5136e42234c20 = L.marker(
+                [49.27380817107044, -122.91220736054855],
+                {
+}
+            ).addTo(feature_group_57c019163de2c8a50c05fff6370819f3);
+        
+    
+            var icon_71f5fb8ae2bf4cea64c5555118565894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ecc4ca09867719d0d7acb50c33e72e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecad17c61f3b77a861558504b2da2ced = $(`<div id="html_ecad17c61f3b77a861558504b2da2ced" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 11 of 64<br><b>Sessions:</b> 3464<br><b>Address:</b> 8999 Nelson Way, Burnaby, British Columbia, V5A 4W9, Canada</div>`)[0];
+                popup_9ecc4ca09867719d0d7acb50c33e72e1.setContent(html_ecad17c61f3b77a861558504b2da2ced);
+            
+        
+
+        marker_b9e2d696d53185212cc5136e42234c20.bindPopup(popup_9ecc4ca09867719d0d7acb50c33e72e1)
+        ;
+
+        
+    
+    
+            marker_b9e2d696d53185212cc5136e42234c20.bindTooltip(
+                `<div>
+                     #11:  (3464 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9e2d696d53185212cc5136e42234c20.setIcon(icon_71f5fb8ae2bf4cea64c5555118565894);
+            
+    
+            feature_group_57c019163de2c8a50c05fff6370819f3.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+            var feature_group_4301b639c931f42464b291fea6a1b04c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d917a8f634d119fd1397319d1efa799a = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_9c5612764af76740776ac157f0d1fc10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9526b69624fc0f93edff420451016be4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf8007fe333228dc3115d3a7bf924f1b = $(`<div id="html_cf8007fe333228dc3115d3a7bf924f1b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 63 of 64<br><b>Sessions:</b> 144<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_9526b69624fc0f93edff420451016be4.setContent(html_cf8007fe333228dc3115d3a7bf924f1b);
+            
+        
+
+        marker_d917a8f634d119fd1397319d1efa799a.bindPopup(popup_9526b69624fc0f93edff420451016be4)
+        ;
+
+        
+    
+    
+            marker_d917a8f634d119fd1397319d1efa799a.bindTooltip(
+                `<div>
+                     #63:  (144 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d917a8f634d119fd1397319d1efa799a.setIcon(icon_9c5612764af76740776ac157f0d1fc10);
+            
+    
+            var marker_26bc5fe2a90f2b6902df9219fe26b97b = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_a856628a59ce8427cfb41f9b4f5bac26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_692c707761a287fde0cdb60ac20e3be5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e63af195706eedad82d6192e1b1bb4a = $(`<div id="html_0e63af195706eedad82d6192e1b1bb4a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 63 of 64<br><b>Sessions:</b> 144<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_692c707761a287fde0cdb60ac20e3be5.setContent(html_0e63af195706eedad82d6192e1b1bb4a);
+            
+        
+
+        marker_26bc5fe2a90f2b6902df9219fe26b97b.bindPopup(popup_692c707761a287fde0cdb60ac20e3be5)
+        ;
+
+        
+    
+    
+            marker_26bc5fe2a90f2b6902df9219fe26b97b.bindTooltip(
+                `<div>
+                     #63:  (144 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_26bc5fe2a90f2b6902df9219fe26b97b.setIcon(icon_a856628a59ce8427cfb41f9b4f5bac26);
+            
+    
+            var marker_a3fd01d9133beed21b670a0fd6f6dc27 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_cf6981c357f4cc1c3bcb131fd2ee9cb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3716dba264f115f83b4535846a75e54c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a497f536b7b321dc5c517f7c8fe0a438 = $(`<div id="html_a497f536b7b321dc5c517f7c8fe0a438" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 57 of 64<br><b>Sessions:</b> 211<br><b>Address:</b> 8888 University Dr W, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_3716dba264f115f83b4535846a75e54c.setContent(html_a497f536b7b321dc5c517f7c8fe0a438);
+            
+        
+
+        marker_a3fd01d9133beed21b670a0fd6f6dc27.bindPopup(popup_3716dba264f115f83b4535846a75e54c)
+        ;
+
+        
+    
+    
+            marker_a3fd01d9133beed21b670a0fd6f6dc27.bindTooltip(
+                `<div>
+                     #57:  (211 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3fd01d9133beed21b670a0fd6f6dc27.setIcon(icon_cf6981c357f4cc1c3bcb131fd2ee9cb6);
+            
+    
+            var marker_d7d83e202a0479a3fa7d35f15e333807 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_6387ed615114df5d328d53da896df6c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a535240fb196cc08620022c1182c3256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25727bbe43317d40d093a15df23e4da8 = $(`<div id="html_25727bbe43317d40d093a15df23e4da8" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 57 of 64<br><b>Sessions:</b> 211<br><b>Address:</b> 8888 University Dr W, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_a535240fb196cc08620022c1182c3256.setContent(html_25727bbe43317d40d093a15df23e4da8);
+            
+        
+
+        marker_d7d83e202a0479a3fa7d35f15e333807.bindPopup(popup_a535240fb196cc08620022c1182c3256)
+        ;
+
+        
+    
+    
+            marker_d7d83e202a0479a3fa7d35f15e333807.bindTooltip(
+                `<div>
+                     #57:  (211 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7d83e202a0479a3fa7d35f15e333807.setIcon(icon_6387ed615114df5d328d53da896df6c3);
+            
+    
+            var marker_14ba9f90c862fdf562e4f26fa112a12f = L.marker(
+                [49.27929123887117, -122.91861190370484],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_f7dbdf43d3c7d520d5483be306fe2d88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8afbf010ddcec5fc042a92e05199a87f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_476742ef421c3201b636bfd053bbb47d = $(`<div id="html_476742ef421c3201b636bfd053bbb47d" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-03<br><b>Rank:</b> 41 of 64<br><b>Sessions:</b> 459<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_8afbf010ddcec5fc042a92e05199a87f.setContent(html_476742ef421c3201b636bfd053bbb47d);
+            
+        
+
+        marker_14ba9f90c862fdf562e4f26fa112a12f.bindPopup(popup_8afbf010ddcec5fc042a92e05199a87f)
+        ;
+
+        
+    
+    
+            marker_14ba9f90c862fdf562e4f26fa112a12f.bindTooltip(
+                `<div>
+                     #41: SFU / CPL-03 (459 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14ba9f90c862fdf562e4f26fa112a12f.setIcon(icon_f7dbdf43d3c7d520d5483be306fe2d88);
+            
+    
+            var marker_631aa923d37f57a33e571b501544122f = L.marker(
+                [49.27929123887117, -122.91861190370484],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_6bab75b7114b0a717c16b9e55c648558 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a409daa127f0a8942859ade0d461fdb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d7a92cf169d3f0867044d854471b17d = $(`<div id="html_7d7a92cf169d3f0867044d854471b17d" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-03<br><b>Rank:</b> 41 of 64<br><b>Sessions:</b> 459<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_a409daa127f0a8942859ade0d461fdb6.setContent(html_7d7a92cf169d3f0867044d854471b17d);
+            
+        
+
+        marker_631aa923d37f57a33e571b501544122f.bindPopup(popup_a409daa127f0a8942859ade0d461fdb6)
+        ;
+
+        
+    
+    
+            marker_631aa923d37f57a33e571b501544122f.bindTooltip(
+                `<div>
+                     #41: SFU / CPL-03 (459 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_631aa923d37f57a33e571b501544122f.setIcon(icon_6bab75b7114b0a717c16b9e55c648558);
+            
+    
+            var marker_4fa121da4d7016d4f0612be095e9056e = L.marker(
+                [49.279295045735815, -122.91838544174196],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_dd9749788094482f7eeb7d754fb20f0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f79ce55459acb14b508344e700a23896 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_148088d575187802a20801cf37003aae = $(`<div id="html_148088d575187802a20801cf37003aae" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-06<br><b>Rank:</b> 39 of 64<br><b>Sessions:</b> 476<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_f79ce55459acb14b508344e700a23896.setContent(html_148088d575187802a20801cf37003aae);
+            
+        
+
+        marker_4fa121da4d7016d4f0612be095e9056e.bindPopup(popup_f79ce55459acb14b508344e700a23896)
+        ;
+
+        
+    
+    
+            marker_4fa121da4d7016d4f0612be095e9056e.bindTooltip(
+                `<div>
+                     #39: SFU / CPL-06 (476 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fa121da4d7016d4f0612be095e9056e.setIcon(icon_dd9749788094482f7eeb7d754fb20f0e);
+            
+    
+            var marker_2ad1754a1b752613a85911c5ab64b280 = L.marker(
+                [49.279295045735815, -122.91838544174196],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_bc5cd5043692b116fe6b5a24a1672c61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e20b0fa2523c195dc93d17609301f555 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6178aef5f3184fc0945334271f82fa9 = $(`<div id="html_c6178aef5f3184fc0945334271f82fa9" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-06<br><b>Rank:</b> 39 of 64<br><b>Sessions:</b> 476<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_e20b0fa2523c195dc93d17609301f555.setContent(html_c6178aef5f3184fc0945334271f82fa9);
+            
+        
+
+        marker_2ad1754a1b752613a85911c5ab64b280.bindPopup(popup_e20b0fa2523c195dc93d17609301f555)
+        ;
+
+        
+    
+    
+            marker_2ad1754a1b752613a85911c5ab64b280.bindTooltip(
+                `<div>
+                     #39: SFU / CPL-06 (476 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ad1754a1b752613a85911c5ab64b280.setIcon(icon_bc5cd5043692b116fe6b5a24a1672c61);
+            
+    
+            var marker_37de2f4d534e7c0a4f98bfa84d57c53b = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_34392d9b156bcdde9a53fd104737f312 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a74eea531ff2c8af67ef124101204509 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c6cf6da36cb7a0d137fec73410abf3f = $(`<div id="html_9c6cf6da36cb7a0d137fec73410abf3f" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 59 of 64<br><b>Sessions:</b> 208<br><b>Address:</b> 8888 University Dr W, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_a74eea531ff2c8af67ef124101204509.setContent(html_9c6cf6da36cb7a0d137fec73410abf3f);
+            
+        
+
+        marker_37de2f4d534e7c0a4f98bfa84d57c53b.bindPopup(popup_a74eea531ff2c8af67ef124101204509)
+        ;
+
+        
+    
+    
+            marker_37de2f4d534e7c0a4f98bfa84d57c53b.bindTooltip(
+                `<div>
+                     #59:  (208 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37de2f4d534e7c0a4f98bfa84d57c53b.setIcon(icon_34392d9b156bcdde9a53fd104737f312);
+            
+    
+            var marker_de8261621e58a1631dbe88a97c6737da = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_f63c6e8d672714df098d773d420524f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31d61f06d984c5b5afd2558f1994eab7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e57cb13637b4632655b0d0360cef051f = $(`<div id="html_e57cb13637b4632655b0d0360cef051f" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 59 of 64<br><b>Sessions:</b> 208<br><b>Address:</b> 8888 University Dr W, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_31d61f06d984c5b5afd2558f1994eab7.setContent(html_e57cb13637b4632655b0d0360cef051f);
+            
+        
+
+        marker_de8261621e58a1631dbe88a97c6737da.bindPopup(popup_31d61f06d984c5b5afd2558f1994eab7)
+        ;
+
+        
+    
+    
+            marker_de8261621e58a1631dbe88a97c6737da.bindTooltip(
+                `<div>
+                     #59:  (208 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de8261621e58a1631dbe88a97c6737da.setIcon(icon_f63c6e8d672714df098d773d420524f9);
+            
+    
+            var marker_d5505b0870214121e259a87093ddcfcf = L.marker(
+                [49.27978868613835, -122.92289155288697],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_d0b50bfe90f61c5568dfd6af61aee63b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53915410cb7d20774938ed20face2e93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffe31d264a3e3be7b722f360fa3129a9 = $(`<div id="html_ffe31d264a3e3be7b722f360fa3129a9" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-02<br><b>Rank:</b> 23 of 64<br><b>Sessions:</b> 1423<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_53915410cb7d20774938ed20face2e93.setContent(html_ffe31d264a3e3be7b722f360fa3129a9);
+            
+        
+
+        marker_d5505b0870214121e259a87093ddcfcf.bindPopup(popup_53915410cb7d20774938ed20face2e93)
+        ;
+
+        
+    
+    
+            marker_d5505b0870214121e259a87093ddcfcf.bindTooltip(
+                `<div>
+                     #23: SFU / SFU WMC 7000-02 (1423 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5505b0870214121e259a87093ddcfcf.setIcon(icon_d0b50bfe90f61c5568dfd6af61aee63b);
+            
+    
+            var marker_de954a375d083e942d904c73c751f986 = L.marker(
+                [49.27978868613835, -122.92289155288697],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_6c41ea551817a85a992173864438c730 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f20291078ae6e1dda52eb1d7bb8f8a9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e60e780124ce79fafd60fed90015627a = $(`<div id="html_e60e780124ce79fafd60fed90015627a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-02<br><b>Rank:</b> 23 of 64<br><b>Sessions:</b> 1423<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_f20291078ae6e1dda52eb1d7bb8f8a9d.setContent(html_e60e780124ce79fafd60fed90015627a);
+            
+        
+
+        marker_de954a375d083e942d904c73c751f986.bindPopup(popup_f20291078ae6e1dda52eb1d7bb8f8a9d)
+        ;
+
+        
+    
+    
+            marker_de954a375d083e942d904c73c751f986.bindTooltip(
+                `<div>
+                     #23: SFU / SFU WMC 7000-02 (1423 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de954a375d083e942d904c73c751f986.setIcon(icon_6c41ea551817a85a992173864438c730);
+            
+    
+            var marker_e41d38d0f15b7ec2f42613a02fcd9580 = L.marker(
+                [49.189137843905776, -122.85060249755328],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_b0003ca9079f940f24cd18e884e17223 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f95fa429ffa6f98aad3b127ce147449 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e63ab46a9a827e6a0ab1ce7cae680bf1 = $(`<div id="html_e63ab46a9a827e6a0ab1ce7cae680bf1" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / STATION 1<br><b>Rank:</b> 31 of 64<br><b>Sessions:</b> 726<br><b>Address:</b> 13419 103 Ave </div>`)[0];
+                popup_5f95fa429ffa6f98aad3b127ce147449.setContent(html_e63ab46a9a827e6a0ab1ce7cae680bf1);
+            
+        
+
+        marker_e41d38d0f15b7ec2f42613a02fcd9580.bindPopup(popup_5f95fa429ffa6f98aad3b127ce147449)
+        ;
+
+        
+    
+    
+            marker_e41d38d0f15b7ec2f42613a02fcd9580.bindTooltip(
+                `<div>
+                     #31: SFU / STATION 1 (726 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e41d38d0f15b7ec2f42613a02fcd9580.setIcon(icon_b0003ca9079f940f24cd18e884e17223);
+            
+    
+            var marker_20fe172e045e953e161a9ae2add0a7d9 = L.marker(
+                [49.189137843905776, -122.85060249755328],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_6b96b209a25fa6679590434b15b7fce8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b348583c8c1d353c253aa27adc917cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61957169989ed53d2fa892c88d9fafeb = $(`<div id="html_61957169989ed53d2fa892c88d9fafeb" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / STATION 1<br><b>Rank:</b> 31 of 64<br><b>Sessions:</b> 726<br><b>Address:</b> 13419 103 Ave </div>`)[0];
+                popup_2b348583c8c1d353c253aa27adc917cc.setContent(html_61957169989ed53d2fa892c88d9fafeb);
+            
+        
+
+        marker_20fe172e045e953e161a9ae2add0a7d9.bindPopup(popup_2b348583c8c1d353c253aa27adc917cc)
+        ;
+
+        
+    
+    
+            marker_20fe172e045e953e161a9ae2add0a7d9.bindTooltip(
+                `<div>
+                     #31: SFU / STATION 1 (726 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_20fe172e045e953e161a9ae2add0a7d9.setIcon(icon_6b96b209a25fa6679590434b15b7fce8);
+            
+    
+            var marker_5d79a46f4a924fe30afed98f5373ebc9 = L.marker(
+                [49.18909821695206, -122.85066443245697],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_63d993afaf54c964189c94f13e34f471 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe7d1bd9dabf84882fa11f182d2723d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea17c23c0fcf12cdaac601c0b5c31e11 = $(`<div id="html_ea17c23c0fcf12cdaac601c0b5c31e11" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / STATION 2<br><b>Rank:</b> 35 of 64<br><b>Sessions:</b> 651<br><b>Address:</b> 13409 102a Ave </div>`)[0];
+                popup_fe7d1bd9dabf84882fa11f182d2723d3.setContent(html_ea17c23c0fcf12cdaac601c0b5c31e11);
+            
+        
+
+        marker_5d79a46f4a924fe30afed98f5373ebc9.bindPopup(popup_fe7d1bd9dabf84882fa11f182d2723d3)
+        ;
+
+        
+    
+    
+            marker_5d79a46f4a924fe30afed98f5373ebc9.bindTooltip(
+                `<div>
+                     #35: SFU / STATION 2 (651 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d79a46f4a924fe30afed98f5373ebc9.setIcon(icon_63d993afaf54c964189c94f13e34f471);
+            
+    
+            var marker_8f770c29371ed36fa9ff6eab75065bee = L.marker(
+                [49.18909821695206, -122.85066443245697],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_587d7c34d5be4b17f9ab4abdc4903f1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f90d355ec96d02b659c78171a14216d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ad863ffaebbc2635c16c62cc6890624 = $(`<div id="html_6ad863ffaebbc2635c16c62cc6890624" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / STATION 2<br><b>Rank:</b> 35 of 64<br><b>Sessions:</b> 651<br><b>Address:</b> 13409 102a Ave </div>`)[0];
+                popup_f90d355ec96d02b659c78171a14216d6.setContent(html_6ad863ffaebbc2635c16c62cc6890624);
+            
+        
+
+        marker_8f770c29371ed36fa9ff6eab75065bee.bindPopup(popup_f90d355ec96d02b659c78171a14216d6)
+        ;
+
+        
+    
+    
+            marker_8f770c29371ed36fa9ff6eab75065bee.bindTooltip(
+                `<div>
+                     #35: SFU / STATION 2 (651 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f770c29371ed36fa9ff6eab75065bee.setIcon(icon_587d7c34d5be4b17f9ab4abdc4903f1c);
+            
+    
+            var marker_00557b8131307a03ccdf81c9edee837e = L.marker(
+                [49.27931223645558, -122.9188586669342],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_d3f4b607f4f6166a40bb3e1f0b70b401 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a562ecd80710a698b39f82e36ba0d53b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12273baa3dfb0aaecece435df6695ac9 = $(`<div id="html_12273baa3dfb0aaecece435df6695ac9" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-02<br><b>Rank:</b> 43 of 64<br><b>Sessions:</b> 436<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_a562ecd80710a698b39f82e36ba0d53b.setContent(html_12273baa3dfb0aaecece435df6695ac9);
+            
+        
+
+        marker_00557b8131307a03ccdf81c9edee837e.bindPopup(popup_a562ecd80710a698b39f82e36ba0d53b)
+        ;
+
+        
+    
+    
+            marker_00557b8131307a03ccdf81c9edee837e.bindTooltip(
+                `<div>
+                     #43: SFU / CPL-02 (436 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00557b8131307a03ccdf81c9edee837e.setIcon(icon_d3f4b607f4f6166a40bb3e1f0b70b401);
+            
+    
+            var marker_50d6ade5c169fc3edc2b3343ccf80098 = L.marker(
+                [49.27931223645558, -122.9188586669342],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_6d038f38d8d909a0c56462fce9ea1a4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b9ecd08e85c17f109e08f1d2cd9baa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d715656c48dee6373935d003722dbf3a = $(`<div id="html_d715656c48dee6373935d003722dbf3a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-02<br><b>Rank:</b> 43 of 64<br><b>Sessions:</b> 436<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_2b9ecd08e85c17f109e08f1d2cd9baa6.setContent(html_d715656c48dee6373935d003722dbf3a);
+            
+        
+
+        marker_50d6ade5c169fc3edc2b3343ccf80098.bindPopup(popup_2b9ecd08e85c17f109e08f1d2cd9baa6)
+        ;
+
+        
+    
+    
+            marker_50d6ade5c169fc3edc2b3343ccf80098.bindTooltip(
+                `<div>
+                     #43: SFU / CPL-02 (436 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50d6ade5c169fc3edc2b3343ccf80098.setIcon(icon_6d038f38d8d909a0c56462fce9ea1a4d);
+            
+    
+            var marker_0cfdcb5722f2b5b879cc01d449cd4ffc = L.marker(
+                [49.27917605926441, -122.91884678169252],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_3984b9f14905f954a15a2641f58bbd40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d392944aa146fb2529da834320f0eacf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_154c85c2726c2404ac3d1488614ca541 = $(`<div id="html_154c85c2726c2404ac3d1488614ca541" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-07<br><b>Rank:</b> 45 of 64<br><b>Sessions:</b> 423<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_d392944aa146fb2529da834320f0eacf.setContent(html_154c85c2726c2404ac3d1488614ca541);
+            
+        
+
+        marker_0cfdcb5722f2b5b879cc01d449cd4ffc.bindPopup(popup_d392944aa146fb2529da834320f0eacf)
+        ;
+
+        
+    
+    
+            marker_0cfdcb5722f2b5b879cc01d449cd4ffc.bindTooltip(
+                `<div>
+                     #45: SFU / CPL-07 (423 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0cfdcb5722f2b5b879cc01d449cd4ffc.setIcon(icon_3984b9f14905f954a15a2641f58bbd40);
+            
+    
+            var marker_c7ba042b6c1122938ed28a9c223bccfc = L.marker(
+                [49.27917605926441, -122.91884678169252],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_54b1e8fb160a7e89928241a3278cda41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62888df0da0cf733a57b69810d6f17c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_423d21db086d6732215bf747fcc971cb = $(`<div id="html_423d21db086d6732215bf747fcc971cb" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-07<br><b>Rank:</b> 45 of 64<br><b>Sessions:</b> 423<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_62888df0da0cf733a57b69810d6f17c5.setContent(html_423d21db086d6732215bf747fcc971cb);
+            
+        
+
+        marker_c7ba042b6c1122938ed28a9c223bccfc.bindPopup(popup_62888df0da0cf733a57b69810d6f17c5)
+        ;
+
+        
+    
+    
+            marker_c7ba042b6c1122938ed28a9c223bccfc.bindTooltip(
+                `<div>
+                     #45: SFU / CPL-07 (423 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7ba042b6c1122938ed28a9c223bccfc.setIcon(icon_54b1e8fb160a7e89928241a3278cda41);
+            
+    
+            var marker_cdb45801c6a14be7589e7733c5aa2201 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_3f1c311b6da7bfbca2709ee59290b39d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0d11e56f09ed2fae95c2c44da600bd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbd4c207e6a347ac073b9bcb35b59e0c = $(`<div id="html_bbd4c207e6a347ac073b9bcb35b59e0c" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 55 of 64<br><b>Sessions:</b> 230<br><b>Address:</b> 8888 University Dr W, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_f0d11e56f09ed2fae95c2c44da600bd0.setContent(html_bbd4c207e6a347ac073b9bcb35b59e0c);
+            
+        
+
+        marker_cdb45801c6a14be7589e7733c5aa2201.bindPopup(popup_f0d11e56f09ed2fae95c2c44da600bd0)
+        ;
+
+        
+    
+    
+            marker_cdb45801c6a14be7589e7733c5aa2201.bindTooltip(
+                `<div>
+                     #55:  (230 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdb45801c6a14be7589e7733c5aa2201.setIcon(icon_3f1c311b6da7bfbca2709ee59290b39d);
+            
+    
+            var marker_5d197c4eadb89b76c794f1795ed7d93f = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_0c330698f821e71b09a9c3d04d939d8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9d3a928d5cba70ecb1293296856039e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ab52de5eb7bfe095ad95a18dfbf4117 = $(`<div id="html_9ab52de5eb7bfe095ad95a18dfbf4117" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 55 of 64<br><b>Sessions:</b> 230<br><b>Address:</b> 8888 University Dr W, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_c9d3a928d5cba70ecb1293296856039e.setContent(html_9ab52de5eb7bfe095ad95a18dfbf4117);
+            
+        
+
+        marker_5d197c4eadb89b76c794f1795ed7d93f.bindPopup(popup_c9d3a928d5cba70ecb1293296856039e)
+        ;
+
+        
+    
+    
+            marker_5d197c4eadb89b76c794f1795ed7d93f.bindTooltip(
+                `<div>
+                     #55:  (230 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d197c4eadb89b76c794f1795ed7d93f.setIcon(icon_0c330698f821e71b09a9c3d04d939d8d);
+            
+    
+            var marker_51c1fb488aca35c8c1241d631b9eb089 = L.marker(
+                [49.190413065036694, -122.85111038200404],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_93fae09fd72a6626072f00e0d0ef9b1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66e16eb0362fcd697440de6a8ca5f17e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_927ed6d50971e471765b49c4003b3b15 = $(`<div id="html_927ed6d50971e471765b49c4003b3b15" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 33 of 64<br><b>Sessions:</b> 660<br><b>Address:</b> 13419 103 Ave, Surrey, British Columbia, V3T 1S6, Canada</div>`)[0];
+                popup_66e16eb0362fcd697440de6a8ca5f17e.setContent(html_927ed6d50971e471765b49c4003b3b15);
+            
+        
+
+        marker_51c1fb488aca35c8c1241d631b9eb089.bindPopup(popup_66e16eb0362fcd697440de6a8ca5f17e)
+        ;
+
+        
+    
+    
+            marker_51c1fb488aca35c8c1241d631b9eb089.bindTooltip(
+                `<div>
+                     #33:  (660 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51c1fb488aca35c8c1241d631b9eb089.setIcon(icon_93fae09fd72a6626072f00e0d0ef9b1b);
+            
+    
+            var marker_cc20a2ad31ad2e523cb989d144719d58 = L.marker(
+                [49.190413065036694, -122.85111038200404],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_ed431da1c3d6af8a8307ed084ee42d83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65ceb60dfd9f4861ed31dd914dc3857f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_483a6bb795ad7df7574caa6ee2c03cc5 = $(`<div id="html_483a6bb795ad7df7574caa6ee2c03cc5" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 33 of 64<br><b>Sessions:</b> 660<br><b>Address:</b> 13419 103 Ave, Surrey, British Columbia, V3T 1S6, Canada</div>`)[0];
+                popup_65ceb60dfd9f4861ed31dd914dc3857f.setContent(html_483a6bb795ad7df7574caa6ee2c03cc5);
+            
+        
+
+        marker_cc20a2ad31ad2e523cb989d144719d58.bindPopup(popup_65ceb60dfd9f4861ed31dd914dc3857f)
+        ;
+
+        
+    
+    
+            marker_cc20a2ad31ad2e523cb989d144719d58.bindTooltip(
+                `<div>
+                     #33:  (660 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc20a2ad31ad2e523cb989d144719d58.setIcon(icon_ed431da1c3d6af8a8307ed084ee42d83);
+            
+    
+            var marker_aeafa35a9ea04bef67fcb0a0cd8096d9 = L.marker(
+                [49.27978883480026, -122.92292910415192],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_9acbe1c8d594e2c508c804cf2088cc9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3d0339e52f6f561035d9f971dc995d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd2326441029f89c81abc6f536d334f2 = $(`<div id="html_dd2326441029f89c81abc6f536d334f2" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-06<br><b>Rank:</b> 21 of 64<br><b>Sessions:</b> 1829<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_e3d0339e52f6f561035d9f971dc995d3.setContent(html_dd2326441029f89c81abc6f536d334f2);
+            
+        
+
+        marker_aeafa35a9ea04bef67fcb0a0cd8096d9.bindPopup(popup_e3d0339e52f6f561035d9f971dc995d3)
+        ;
+
+        
+    
+    
+            marker_aeafa35a9ea04bef67fcb0a0cd8096d9.bindTooltip(
+                `<div>
+                     #21: SFU / SFU WMC 7000-06 (1829 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aeafa35a9ea04bef67fcb0a0cd8096d9.setIcon(icon_9acbe1c8d594e2c508c804cf2088cc9a);
+            
+    
+            var marker_b2bfcf8a111c48f96e8306bbad7e380d = L.marker(
+                [49.27978883480026, -122.92292910415192],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_58ac9c75ea14fbce25fa225fbd93511a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d9b6cc0ef552f1d69f60c60aa882dd2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2f973b1e6e22b2488c741aba5bdfa48 = $(`<div id="html_f2f973b1e6e22b2488c741aba5bdfa48" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-06<br><b>Rank:</b> 21 of 64<br><b>Sessions:</b> 1829<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_7d9b6cc0ef552f1d69f60c60aa882dd2.setContent(html_f2f973b1e6e22b2488c741aba5bdfa48);
+            
+        
+
+        marker_b2bfcf8a111c48f96e8306bbad7e380d.bindPopup(popup_7d9b6cc0ef552f1d69f60c60aa882dd2)
+        ;
+
+        
+    
+    
+            marker_b2bfcf8a111c48f96e8306bbad7e380d.bindTooltip(
+                `<div>
+                     #21: SFU / SFU WMC 7000-06 (1829 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2bfcf8a111c48f96e8306bbad7e380d.setIcon(icon_58ac9c75ea14fbce25fa225fbd93511a);
+            
+    
+            var marker_d1f4bf295cd15b2591a4f6c858100d32 = L.marker(
+                [49.27932304251088, -122.91909354492188],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_55e76b4632b6a4ef3878540c1a5d2773 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed492f824d1dc1b1b4181f22f1afa36d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c640a1a1493c31bfe6deefc6ddba34d5 = $(`<div id="html_c640a1a1493c31bfe6deefc6ddba34d5" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-04<br><b>Rank:</b> 53 of 64<br><b>Sessions:</b> 249<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_ed492f824d1dc1b1b4181f22f1afa36d.setContent(html_c640a1a1493c31bfe6deefc6ddba34d5);
+            
+        
+
+        marker_d1f4bf295cd15b2591a4f6c858100d32.bindPopup(popup_ed492f824d1dc1b1b4181f22f1afa36d)
+        ;
+
+        
+    
+    
+            marker_d1f4bf295cd15b2591a4f6c858100d32.bindTooltip(
+                `<div>
+                     #53: SFU / CPL-04 (249 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1f4bf295cd15b2591a4f6c858100d32.setIcon(icon_55e76b4632b6a4ef3878540c1a5d2773);
+            
+    
+            var marker_4c56dea7dd07f04b6c099f8e12ce74e3 = L.marker(
+                [49.27932304251088, -122.91909354492188],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_c4d5c07095f3f34bfaf50e86c6262b87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f04a03fb783f396b2db181d3393a4ab1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e12419856e8b712254f3a41e9278b088 = $(`<div id="html_e12419856e8b712254f3a41e9278b088" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-04<br><b>Rank:</b> 53 of 64<br><b>Sessions:</b> 249<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_f04a03fb783f396b2db181d3393a4ab1.setContent(html_e12419856e8b712254f3a41e9278b088);
+            
+        
+
+        marker_4c56dea7dd07f04b6c099f8e12ce74e3.bindPopup(popup_f04a03fb783f396b2db181d3393a4ab1)
+        ;
+
+        
+    
+    
+            marker_4c56dea7dd07f04b6c099f8e12ce74e3.bindTooltip(
+                `<div>
+                     #53: SFU / CPL-04 (249 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c56dea7dd07f04b6c099f8e12ce74e3.setIcon(icon_c4d5c07095f3f34bfaf50e86c6262b87);
+            
+    
+            var marker_8061d622d43eba7691e7efa0b6f4bec3 = L.marker(
+                [49.19048327828886, -122.85091700288174],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_42d1241fba1b8c06b9cd9e00478ff9a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ea5e97bbc2cf5b65de8ed5f30ee258e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8068333c037be7e5297fa39fda27e01b = $(`<div id="html_8068333c037be7e5297fa39fda27e01b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 27 of 64<br><b>Sessions:</b> 1021<br><b>Address:</b> 13419 103 Ave, Floor P1, Surrey, British Columbia, V3T 1R7, Canada</div>`)[0];
+                popup_5ea5e97bbc2cf5b65de8ed5f30ee258e.setContent(html_8068333c037be7e5297fa39fda27e01b);
+            
+        
+
+        marker_8061d622d43eba7691e7efa0b6f4bec3.bindPopup(popup_5ea5e97bbc2cf5b65de8ed5f30ee258e)
+        ;
+
+        
+    
+    
+            marker_8061d622d43eba7691e7efa0b6f4bec3.bindTooltip(
+                `<div>
+                     #27:  (1021 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8061d622d43eba7691e7efa0b6f4bec3.setIcon(icon_42d1241fba1b8c06b9cd9e00478ff9a0);
+            
+    
+            var marker_1aaccbeed6c02ddb299327107bab82eb = L.marker(
+                [49.19048327828886, -122.85091700288174],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_eef419a72c21eba7a6eb8cb0d0d187c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_892f3e992da00012ed66cb837eeda1eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5617f658b4bc604b915192e9ff5cca43 = $(`<div id="html_5617f658b4bc604b915192e9ff5cca43" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 27 of 64<br><b>Sessions:</b> 1021<br><b>Address:</b> 13419 103 Ave, Floor P1, Surrey, British Columbia, V3T 1R7, Canada</div>`)[0];
+                popup_892f3e992da00012ed66cb837eeda1eb.setContent(html_5617f658b4bc604b915192e9ff5cca43);
+            
+        
+
+        marker_1aaccbeed6c02ddb299327107bab82eb.bindPopup(popup_892f3e992da00012ed66cb837eeda1eb)
+        ;
+
+        
+    
+    
+            marker_1aaccbeed6c02ddb299327107bab82eb.bindTooltip(
+                `<div>
+                     #27:  (1021 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1aaccbeed6c02ddb299327107bab82eb.setIcon(icon_eef419a72c21eba7a6eb8cb0d0d187c1);
+            
+    
+            var marker_05180d58c919b01ef9bd3fbd4f2faa5f = L.marker(
+                [49.27364, -122.911804],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_e27d735200643ab7bd84a860278cff99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e472e0c77d223ead697eff56c4c46096 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76b85f602b5f35f5e9907acf2e89ec1d = $(`<div id="html_76b85f602b5f35f5e9907acf2e89ec1d" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / DISCOVERY 2<br><b>Rank:</b> 25 of 64<br><b>Sessions:</b> 1140<br><b>Address:</b> 8999 Nelson Way </div>`)[0];
+                popup_e472e0c77d223ead697eff56c4c46096.setContent(html_76b85f602b5f35f5e9907acf2e89ec1d);
+            
+        
+
+        marker_05180d58c919b01ef9bd3fbd4f2faa5f.bindPopup(popup_e472e0c77d223ead697eff56c4c46096)
+        ;
+
+        
+    
+    
+            marker_05180d58c919b01ef9bd3fbd4f2faa5f.bindTooltip(
+                `<div>
+                     #25: SFU / DISCOVERY 2 (1140 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05180d58c919b01ef9bd3fbd4f2faa5f.setIcon(icon_e27d735200643ab7bd84a860278cff99);
+            
+    
+            var marker_6eca8712cf8298d9f6735ea049000a9e = L.marker(
+                [49.27364, -122.911804],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_9dbf5184a519eab149e41a682e5010c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8bf2acf6932a128c2d4303bfc7acd736 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1144795785f7d8e795e884d96c3736d3 = $(`<div id="html_1144795785f7d8e795e884d96c3736d3" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / DISCOVERY 2<br><b>Rank:</b> 25 of 64<br><b>Sessions:</b> 1140<br><b>Address:</b> 8999 Nelson Way </div>`)[0];
+                popup_8bf2acf6932a128c2d4303bfc7acd736.setContent(html_1144795785f7d8e795e884d96c3736d3);
+            
+        
+
+        marker_6eca8712cf8298d9f6735ea049000a9e.bindPopup(popup_8bf2acf6932a128c2d4303bfc7acd736)
+        ;
+
+        
+    
+    
+            marker_6eca8712cf8298d9f6735ea049000a9e.bindTooltip(
+                `<div>
+                     #25: SFU / DISCOVERY 2 (1140 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6eca8712cf8298d9f6735ea049000a9e.setIcon(icon_9dbf5184a519eab149e41a682e5010c7);
+            
+    
+            var marker_89f16a8e75c18ea55936f439852a5f00 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_df0e32968728e04c4051e74727147000 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c01a67fe1da1f013cdffdff3378a1f00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fedd9287847abe0f8f194e29380d01b = $(`<div id="html_8fedd9287847abe0f8f194e29380d01b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 49 of 64<br><b>Sessions:</b> 386<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_c01a67fe1da1f013cdffdff3378a1f00.setContent(html_8fedd9287847abe0f8f194e29380d01b);
+            
+        
+
+        marker_89f16a8e75c18ea55936f439852a5f00.bindPopup(popup_c01a67fe1da1f013cdffdff3378a1f00)
+        ;
+
+        
+    
+    
+            marker_89f16a8e75c18ea55936f439852a5f00.bindTooltip(
+                `<div>
+                     #49:  (386 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89f16a8e75c18ea55936f439852a5f00.setIcon(icon_df0e32968728e04c4051e74727147000);
+            
+    
+            var marker_c3463e5c51b1277f4540af0b04eccf08 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_5399a833a7d9f923a954f8824fa587ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_519fab22e53428009be12aa33ac3c441 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37a7cc3d05a2b24ff6875965617edaf6 = $(`<div id="html_37a7cc3d05a2b24ff6875965617edaf6" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 49 of 64<br><b>Sessions:</b> 386<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_519fab22e53428009be12aa33ac3c441.setContent(html_37a7cc3d05a2b24ff6875965617edaf6);
+            
+        
+
+        marker_c3463e5c51b1277f4540af0b04eccf08.bindPopup(popup_519fab22e53428009be12aa33ac3c441)
+        ;
+
+        
+    
+    
+            marker_c3463e5c51b1277f4540af0b04eccf08.bindTooltip(
+                `<div>
+                     #49:  (386 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3463e5c51b1277f4540af0b04eccf08.setIcon(icon_5399a833a7d9f923a954f8824fa587ad);
+            
+    
+            var marker_d1f203d923b24ca014f7e1641ed77c71 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_c456f1cb4cd7ea0d8be2c81965a4ec98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced90aef21beafce9207eeba0a56ca5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51e834d9a25ab35a480912f412924512 = $(`<div id="html_51e834d9a25ab35a480912f412924512" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 51 of 64<br><b>Sessions:</b> 313<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_ced90aef21beafce9207eeba0a56ca5d.setContent(html_51e834d9a25ab35a480912f412924512);
+            
+        
+
+        marker_d1f203d923b24ca014f7e1641ed77c71.bindPopup(popup_ced90aef21beafce9207eeba0a56ca5d)
+        ;
+
+        
+    
+    
+            marker_d1f203d923b24ca014f7e1641ed77c71.bindTooltip(
+                `<div>
+                     #51:  (313 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1f203d923b24ca014f7e1641ed77c71.setIcon(icon_c456f1cb4cd7ea0d8be2c81965a4ec98);
+            
+    
+            var marker_636f88cebb75a6406ca38f8cd2252441 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_cdc6f1347e1720d68760999ace36cc9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b00fd6e0107a220403afad7698f1f6f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_472e2f557369a640335cebafd58fc1bb = $(`<div id="html_472e2f557369a640335cebafd58fc1bb" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 51 of 64<br><b>Sessions:</b> 313<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_b00fd6e0107a220403afad7698f1f6f1.setContent(html_472e2f557369a640335cebafd58fc1bb);
+            
+        
+
+        marker_636f88cebb75a6406ca38f8cd2252441.bindPopup(popup_b00fd6e0107a220403afad7698f1f6f1)
+        ;
+
+        
+    
+    
+            marker_636f88cebb75a6406ca38f8cd2252441.bindTooltip(
+                `<div>
+                     #51:  (313 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_636f88cebb75a6406ca38f8cd2252441.setIcon(icon_cdc6f1347e1720d68760999ace36cc9f);
+            
+    
+            var marker_1d1d85cbd0e175cee03ffe906f1cec8d = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_fe015ba059857cb069486be15b6a14d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3696a3f8a8a286cf0f30d91856f79ed1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0896af5454e343f9df3c206c3106535b = $(`<div id="html_0896af5454e343f9df3c206c3106535b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 61 of 64<br><b>Sessions:</b> 162<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_3696a3f8a8a286cf0f30d91856f79ed1.setContent(html_0896af5454e343f9df3c206c3106535b);
+            
+        
+
+        marker_1d1d85cbd0e175cee03ffe906f1cec8d.bindPopup(popup_3696a3f8a8a286cf0f30d91856f79ed1)
+        ;
+
+        
+    
+    
+            marker_1d1d85cbd0e175cee03ffe906f1cec8d.bindTooltip(
+                `<div>
+                     #61:  (162 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d1d85cbd0e175cee03ffe906f1cec8d.setIcon(icon_fe015ba059857cb069486be15b6a14d0);
+            
+    
+            var marker_7b3bb87518b46d0a2b041c54597cd382 = L.marker(
+                [49.27963567579469, -122.92405411918756],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_3bd4eb3ff9fcfdd0ef4607069e439ef8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fec361ecf47d5433004b4f68f0b8d72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_193a2dd132fe48bb258e7516d1126b7b = $(`<div id="html_193a2dd132fe48bb258e7516d1126b7b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> <br><b>Rank:</b> 61 of 64<br><b>Sessions:</b> 162<br><b>Address:</b> 8888 University Dr W, Floor P7000, Burnaby, British Columbia, Canada</div>`)[0];
+                popup_8fec361ecf47d5433004b4f68f0b8d72.setContent(html_193a2dd132fe48bb258e7516d1126b7b);
+            
+        
+
+        marker_7b3bb87518b46d0a2b041c54597cd382.bindPopup(popup_8fec361ecf47d5433004b4f68f0b8d72)
+        ;
+
+        
+    
+    
+            marker_7b3bb87518b46d0a2b041c54597cd382.bindTooltip(
+                `<div>
+                     #61:  (162 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b3bb87518b46d0a2b041c54597cd382.setIcon(icon_3bd4eb3ff9fcfdd0ef4607069e439ef8);
+            
+    
+            var marker_72c690f918b952fbaf113f707288695e = L.marker(
+                [49.279153468684726, -122.91876549817812],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_9f2d72b1826dedcff9cadb254786eee1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd028fd89cb8b3a394c3256d492634f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a89241eeea4bca270df3a6ab73455c6f = $(`<div id="html_a89241eeea4bca270df3a6ab73455c6f" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-01<br><b>Rank:</b> 37 of 64<br><b>Sessions:</b> 588<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_cd028fd89cb8b3a394c3256d492634f0.setContent(html_a89241eeea4bca270df3a6ab73455c6f);
+            
+        
+
+        marker_72c690f918b952fbaf113f707288695e.bindPopup(popup_cd028fd89cb8b3a394c3256d492634f0)
+        ;
+
+        
+    
+    
+            marker_72c690f918b952fbaf113f707288695e.bindTooltip(
+                `<div>
+                     #37: SFU / CPL-01 (588 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72c690f918b952fbaf113f707288695e.setIcon(icon_9f2d72b1826dedcff9cadb254786eee1);
+            
+    
+            var marker_d5a1eed6be21d9e96661a71aab22669d = L.marker(
+                [49.279153468684726, -122.91876549817812],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_b04e960b84e51b10be8118de11ed616d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57f6fafa6a2f3839e5c2efef95082b33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d5fa61093a31df23bbc8a55f87dfd7a = $(`<div id="html_3d5fa61093a31df23bbc8a55f87dfd7a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-01<br><b>Rank:</b> 37 of 64<br><b>Sessions:</b> 588<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_57f6fafa6a2f3839e5c2efef95082b33.setContent(html_3d5fa61093a31df23bbc8a55f87dfd7a);
+            
+        
+
+        marker_d5a1eed6be21d9e96661a71aab22669d.bindPopup(popup_57f6fafa6a2f3839e5c2efef95082b33)
+        ;
+
+        
+    
+    
+            marker_d5a1eed6be21d9e96661a71aab22669d.bindTooltip(
+                `<div>
+                     #37: SFU / CPL-01 (588 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5a1eed6be21d9e96661a71aab22669d.setIcon(icon_b04e960b84e51b10be8118de11ed616d);
+            
+    
+            var marker_f19e8e6a173c8c90fd9a10323ae28379 = L.marker(
+                [49.27981055840132, -122.92292105718612],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_69c02f79e7903e499a5320fe8562c450 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04e47c577022779e824c1255b21cd150 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_838d67bac9f23ddfad5f0c2b9d1c52c4 = $(`<div id="html_838d67bac9f23ddfad5f0c2b9d1c52c4" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-04<br><b>Rank:</b> 29 of 64<br><b>Sessions:</b> 991<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_04e47c577022779e824c1255b21cd150.setContent(html_838d67bac9f23ddfad5f0c2b9d1c52c4);
+            
+        
+
+        marker_f19e8e6a173c8c90fd9a10323ae28379.bindPopup(popup_04e47c577022779e824c1255b21cd150)
+        ;
+
+        
+    
+    
+            marker_f19e8e6a173c8c90fd9a10323ae28379.bindTooltip(
+                `<div>
+                     #29: SFU / SFU WMC 7000-04 (991 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f19e8e6a173c8c90fd9a10323ae28379.setIcon(icon_69c02f79e7903e499a5320fe8562c450);
+            
+    
+            var marker_8484aad859f469ea038f7a9df297c613 = L.marker(
+                [49.27981055840132, -122.92292105718612],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_051849b0dd153ea3921d4f8ab03c54f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5124280e6ac2e7de0179a3a17f9bd5cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cc10545fde58a186fea7c0c0e908e7c = $(`<div id="html_7cc10545fde58a186fea7c0c0e908e7c" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / SFU WMC 7000-04<br><b>Rank:</b> 29 of 64<br><b>Sessions:</b> 991<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_5124280e6ac2e7de0179a3a17f9bd5cc.setContent(html_7cc10545fde58a186fea7c0c0e908e7c);
+            
+        
+
+        marker_8484aad859f469ea038f7a9df297c613.bindPopup(popup_5124280e6ac2e7de0179a3a17f9bd5cc)
+        ;
+
+        
+    
+    
+            marker_8484aad859f469ea038f7a9df297c613.bindTooltip(
+                `<div>
+                     #29: SFU / SFU WMC 7000-04 (991 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8484aad859f469ea038f7a9df297c613.setIcon(icon_051849b0dd153ea3921d4f8ab03c54f7);
+            
+    
+            var marker_fa4c54adbef925f231ef477580c3b6b1 = L.marker(
+                [49.27930904412531, -122.91931885047912],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_f435fe913d56818d16aca8a50e92c16f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dc3d6621d80878a0052b157c8671407 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a77b3b863bb3065a12440485ad7cdae7 = $(`<div id="html_a77b3b863bb3065a12440485ad7cdae7" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-05<br><b>Rank:</b> 47 of 64<br><b>Sessions:</b> 417<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_9dc3d6621d80878a0052b157c8671407.setContent(html_a77b3b863bb3065a12440485ad7cdae7);
+            
+        
+
+        marker_fa4c54adbef925f231ef477580c3b6b1.bindPopup(popup_9dc3d6621d80878a0052b157c8671407)
+        ;
+
+        
+    
+    
+            marker_fa4c54adbef925f231ef477580c3b6b1.bindTooltip(
+                `<div>
+                     #47: SFU / CPL-05 (417 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa4c54adbef925f231ef477580c3b6b1.setIcon(icon_f435fe913d56818d16aca8a50e92c16f);
+            
+    
+            var marker_1f09604f1e3d12b022cd98b48cd13239 = L.marker(
+                [49.27930904412531, -122.91931885047912],
+                {
+}
+            ).addTo(feature_group_4301b639c931f42464b291fea6a1b04c);
+        
+    
+            var icon_a0bfffe157923d73967e1dac2e7d5419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ad73f67beaa0c1e6cedb0e226c07eed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a2e154881b6272b74f0961f455d635a = $(`<div id="html_1a2e154881b6272b74f0961f455d635a" style="width: 100.0%; height: 100.0%;"><b>Station:</b> SFU / CPL-05<br><b>Rank:</b> 47 of 64<br><b>Sessions:</b> 417<br><b>Address:</b> 8888 University Drive </div>`)[0];
+                popup_0ad73f67beaa0c1e6cedb0e226c07eed.setContent(html_1a2e154881b6272b74f0961f455d635a);
+            
+        
+
+        marker_1f09604f1e3d12b022cd98b48cd13239.bindPopup(popup_0ad73f67beaa0c1e6cedb0e226c07eed)
+        ;
+
+        
+    
+    
+            marker_1f09604f1e3d12b022cd98b48cd13239.bindTooltip(
+                `<div>
+                     #47: SFU / CPL-05 (417 sessions)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f09604f1e3d12b022cd98b48cd13239.setIcon(icon_a0bfffe157923d73967e1dac2e7d5419);
+            
+    
+            feature_group_4301b639c931f42464b291fea6a1b04c.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+            var layer_control_17b6717a55b68e2da3da92929e8b5034_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4c01254b1571118198778e61dba6d884,
+                },
+                overlays :  {
+                    "Top 5 Stations" : feature_group_0baea566db0772029655da30d10127a3,
+                    "Stations Ranked 6-10" : feature_group_9f1d504aef7f89671363834282a9ba69,
+                    "Stations Ranked 11-20" : feature_group_57c019163de2c8a50c05fff6370819f3,
+                    "Other Stations" : feature_group_4301b639c931f42464b291fea6a1b04c,
+                },
+            };
+            let layer_control_17b6717a55b68e2da3da92929e8b5034 = L.control.layers(
+                layer_control_17b6717a55b68e2da3da92929e8b5034_layers.base_layers,
+                layer_control_17b6717a55b68e2da3da92929e8b5034_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+
+        
+    
+            tile_layer_4c01254b1571118198778e61dba6d884.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+                marker_cb0bb771f486a4f3056a1f23fb2197f4.setIcon(icon_5e274d622e590520ae325c836558e8a1);
+            
+    
+                marker_4dd0c252cbee9342da9fbe3b149788e1.setIcon(icon_9ac16ef11890cfee827616974fa735f1);
+            
+    
+                marker_ee4b505ff26af4c57059bff27cdc3536.setIcon(icon_92a8cfe7720287ddbe87f2dcc3b8bc64);
+            
+    
+                marker_8db61fcaac89de0057226a395bf919db.setIcon(icon_e6688536ad3c6cb556eb7bfbae2f29c8);
+            
+    
+                marker_0e65d567c443423a4d1142ea6f98e902.setIcon(icon_5e48a1c9078d60ff97ef49db295fe2db);
+            
+    
+                marker_aaa760f2cedaec7dbce437df2b6c08dd.setIcon(icon_08584977fd6279672f89df7b7b65b7c2);
+            
+    
+            feature_group_0baea566db0772029655da30d10127a3.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+                marker_57c518ca866b9a279dc42b98140df6af.setIcon(icon_d3288f66807eb1ddaa0d96054b81c882);
+            
+    
+                marker_db5c219cb2555d4e6f701a144a1007be.setIcon(icon_bb047961900ee1c5c2a63c5e6b18be48);
+            
+    
+                marker_a4df595e09feba0b0bfc114018bbef75.setIcon(icon_1184fa1108de88b29bf3fb508937cd0b);
+            
+    
+                marker_394e33179c7176833bdff05edf933dab.setIcon(icon_846d2f60d35ce915396911d2a7c5fa38);
+            
+    
+            feature_group_9f1d504aef7f89671363834282a9ba69.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+                marker_2d80eaa66dbe52a13f7678b0e50e5c49.setIcon(icon_a7ec85a9cb72dd5bf4cb3d1388172884);
+            
+    
+                marker_bed9868556ad115bbd59309bf62678e8.setIcon(icon_c8d47b720bf542792b387b3232934ed7);
+            
+    
+                marker_adb4d0a0500762951ce10e228819beb2.setIcon(icon_9d4e31175106c73f418a5995148fbbc7);
+            
+    
+                marker_b1cbc1e0554bbdfa4707352a1c48b3b0.setIcon(icon_7c21fa15984dd5cce1a89a49a6648799);
+            
+    
+                marker_626a61e48dc1d39202259e55dcfcef36.setIcon(icon_bbd011028f2aec67dd1d9ebc7d5e85ce);
+            
+    
+                marker_38b4d2946c124db40b15fb0faa552bc0.setIcon(icon_2fc4c4a64193bed42390d1d75ce7f73d);
+            
+    
+                marker_68570d31ac8b222c97e9ea6bffe5dd14.setIcon(icon_6cfc074554b9e2cbbeca5e53716e5706);
+            
+    
+                marker_a02f3706215479017842008b7d60bad9.setIcon(icon_59d547630750313d3437992154fef7ff);
+            
+    
+                marker_6da0e6efed897151037f643c46531753.setIcon(icon_34c73e71bc8dd500068d6666c1bbec0a);
+            
+    
+                marker_b9e2d696d53185212cc5136e42234c20.setIcon(icon_71f5fb8ae2bf4cea64c5555118565894);
+            
+    
+            feature_group_57c019163de2c8a50c05fff6370819f3.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+    
+                marker_d917a8f634d119fd1397319d1efa799a.setIcon(icon_9c5612764af76740776ac157f0d1fc10);
+            
+    
+                marker_26bc5fe2a90f2b6902df9219fe26b97b.setIcon(icon_a856628a59ce8427cfb41f9b4f5bac26);
+            
+    
+                marker_a3fd01d9133beed21b670a0fd6f6dc27.setIcon(icon_cf6981c357f4cc1c3bcb131fd2ee9cb6);
+            
+    
+                marker_d7d83e202a0479a3fa7d35f15e333807.setIcon(icon_6387ed615114df5d328d53da896df6c3);
+            
+    
+                marker_14ba9f90c862fdf562e4f26fa112a12f.setIcon(icon_f7dbdf43d3c7d520d5483be306fe2d88);
+            
+    
+                marker_631aa923d37f57a33e571b501544122f.setIcon(icon_6bab75b7114b0a717c16b9e55c648558);
+            
+    
+                marker_4fa121da4d7016d4f0612be095e9056e.setIcon(icon_dd9749788094482f7eeb7d754fb20f0e);
+            
+    
+                marker_2ad1754a1b752613a85911c5ab64b280.setIcon(icon_bc5cd5043692b116fe6b5a24a1672c61);
+            
+    
+                marker_37de2f4d534e7c0a4f98bfa84d57c53b.setIcon(icon_34392d9b156bcdde9a53fd104737f312);
+            
+    
+                marker_de8261621e58a1631dbe88a97c6737da.setIcon(icon_f63c6e8d672714df098d773d420524f9);
+            
+    
+                marker_d5505b0870214121e259a87093ddcfcf.setIcon(icon_d0b50bfe90f61c5568dfd6af61aee63b);
+            
+    
+                marker_de954a375d083e942d904c73c751f986.setIcon(icon_6c41ea551817a85a992173864438c730);
+            
+    
+                marker_e41d38d0f15b7ec2f42613a02fcd9580.setIcon(icon_b0003ca9079f940f24cd18e884e17223);
+            
+    
+                marker_20fe172e045e953e161a9ae2add0a7d9.setIcon(icon_6b96b209a25fa6679590434b15b7fce8);
+            
+    
+                marker_5d79a46f4a924fe30afed98f5373ebc9.setIcon(icon_63d993afaf54c964189c94f13e34f471);
+            
+    
+                marker_8f770c29371ed36fa9ff6eab75065bee.setIcon(icon_587d7c34d5be4b17f9ab4abdc4903f1c);
+            
+    
+                marker_00557b8131307a03ccdf81c9edee837e.setIcon(icon_d3f4b607f4f6166a40bb3e1f0b70b401);
+            
+    
+                marker_50d6ade5c169fc3edc2b3343ccf80098.setIcon(icon_6d038f38d8d909a0c56462fce9ea1a4d);
+            
+    
+                marker_0cfdcb5722f2b5b879cc01d449cd4ffc.setIcon(icon_3984b9f14905f954a15a2641f58bbd40);
+            
+    
+                marker_c7ba042b6c1122938ed28a9c223bccfc.setIcon(icon_54b1e8fb160a7e89928241a3278cda41);
+            
+    
+                marker_cdb45801c6a14be7589e7733c5aa2201.setIcon(icon_3f1c311b6da7bfbca2709ee59290b39d);
+            
+    
+                marker_5d197c4eadb89b76c794f1795ed7d93f.setIcon(icon_0c330698f821e71b09a9c3d04d939d8d);
+            
+    
+                marker_51c1fb488aca35c8c1241d631b9eb089.setIcon(icon_93fae09fd72a6626072f00e0d0ef9b1b);
+            
+    
+                marker_cc20a2ad31ad2e523cb989d144719d58.setIcon(icon_ed431da1c3d6af8a8307ed084ee42d83);
+            
+    
+                marker_aeafa35a9ea04bef67fcb0a0cd8096d9.setIcon(icon_9acbe1c8d594e2c508c804cf2088cc9a);
+            
+    
+                marker_b2bfcf8a111c48f96e8306bbad7e380d.setIcon(icon_58ac9c75ea14fbce25fa225fbd93511a);
+            
+    
+                marker_d1f4bf295cd15b2591a4f6c858100d32.setIcon(icon_55e76b4632b6a4ef3878540c1a5d2773);
+            
+    
+                marker_4c56dea7dd07f04b6c099f8e12ce74e3.setIcon(icon_c4d5c07095f3f34bfaf50e86c6262b87);
+            
+    
+                marker_8061d622d43eba7691e7efa0b6f4bec3.setIcon(icon_42d1241fba1b8c06b9cd9e00478ff9a0);
+            
+    
+                marker_1aaccbeed6c02ddb299327107bab82eb.setIcon(icon_eef419a72c21eba7a6eb8cb0d0d187c1);
+            
+    
+                marker_05180d58c919b01ef9bd3fbd4f2faa5f.setIcon(icon_e27d735200643ab7bd84a860278cff99);
+            
+    
+                marker_6eca8712cf8298d9f6735ea049000a9e.setIcon(icon_9dbf5184a519eab149e41a682e5010c7);
+            
+    
+                marker_89f16a8e75c18ea55936f439852a5f00.setIcon(icon_df0e32968728e04c4051e74727147000);
+            
+    
+                marker_c3463e5c51b1277f4540af0b04eccf08.setIcon(icon_5399a833a7d9f923a954f8824fa587ad);
+            
+    
+                marker_d1f203d923b24ca014f7e1641ed77c71.setIcon(icon_c456f1cb4cd7ea0d8be2c81965a4ec98);
+            
+    
+                marker_636f88cebb75a6406ca38f8cd2252441.setIcon(icon_cdc6f1347e1720d68760999ace36cc9f);
+            
+    
+                marker_1d1d85cbd0e175cee03ffe906f1cec8d.setIcon(icon_fe015ba059857cb069486be15b6a14d0);
+            
+    
+                marker_7b3bb87518b46d0a2b041c54597cd382.setIcon(icon_3bd4eb3ff9fcfdd0ef4607069e439ef8);
+            
+    
+                marker_72c690f918b952fbaf113f707288695e.setIcon(icon_9f2d72b1826dedcff9cadb254786eee1);
+            
+    
+                marker_d5a1eed6be21d9e96661a71aab22669d.setIcon(icon_b04e960b84e51b10be8118de11ed616d);
+            
+    
+                marker_f19e8e6a173c8c90fd9a10323ae28379.setIcon(icon_69c02f79e7903e499a5320fe8562c450);
+            
+    
+                marker_8484aad859f469ea038f7a9df297c613.setIcon(icon_051849b0dd153ea3921d4f8ab03c54f7);
+            
+    
+                marker_fa4c54adbef925f231ef477580c3b6b1.setIcon(icon_f435fe913d56818d16aca8a50e92c16f);
+            
+    
+                marker_1f09604f1e3d12b022cd98b48cd13239.setIcon(icon_a0bfffe157923d73967e1dac2e7d5419);
+            
+    
+            feature_group_4301b639c931f42464b291fea6a1b04c.addTo(map_daa1d03ad5cfc03dd36f40b5470276f1);
+        
+</script>
+</html>
