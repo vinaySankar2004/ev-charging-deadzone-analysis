@@ -89,10 +89,10 @@ Identify reliable “deadzones” — periods when EV charging stations are con
    - Map these windows network‑wide (weekday vs. weekend).
 
 3. **Reliability assessment (future)**  
-   $$
+   \[
    \text{Reliability Index}
    = \frac{\text{Days deadzone occurs}}{\text{Total days observed}}\times100
-   $$
+   ]/
    - Rate each deadzone; prioritise those ≥ Z %.
    - Produce a ranked list of high‑reliability charging opportunities.
 
