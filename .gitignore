@@ -179,6 +179,8 @@ cython_debug/
 # Virtual environments
 .env/
 ./idea
+.idea/workspace.xml
+
 # VSCode
 .vscode/
 
