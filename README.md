@@ -7,7 +7,7 @@
 ## Datasets
 
 > **Citation:**  
-> Stephen Makonin, Isla Ziyat, Rylen Sampson, Siyu An, Fred Popowich, Patrick Palmer, David Agosti. (2023). SFU‑EVP: SFU EV Parking Dataset. IEEE Dataport. https://dx.doi.org/10.21227/ya1w‑m583
+> Stephen Makonin, Isla Ziyat, Rylen Sampson, Siyu An, Fred Popowich, Patrick Palmer, David Agosti. (2023). SFU‑EVP: SFU EV Parking Dataset. IEEE Dataport. https://ieee-dataport.org/open-access/sfu-evp-sfu-ev-parking-dataset
 
 **Dataset timeframe:** 11‑06-2019 to 04‑17‑2025
 
