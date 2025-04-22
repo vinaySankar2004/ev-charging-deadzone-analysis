@@ -87,7 +87,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
    - Require ≥ Y consecutive sub‑X % hours to count as a meaningful window.
    - Map these windows network‑wide (weekday vs. weekend).
 
-3. **Reliability assessment (future)**
+3. **Reliability assessment (future work)**
    | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/reliability_index_dark.svg" /><img src="docs/images/reliability_index.svg" alt="Reliability Index formula" style="background: transparent;" /></picture> |
    |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 
@@ -120,7 +120,7 @@ Git repo containing source code as well as a full slide deck of results with one
 
 ---
 
-## Future Work
+## Next Steps
 
 - **Reliability assessment:** implement step 3 to compute and rank deadzone persistence over time.
 - **Year‑by‑year analysis:** evaluate how deadzone patterns evolve annually to spot seasonal or operational shifts.
