@@ -66,6 +66,9 @@ session_id, anomaly_description, value, unit
    - Amended `Stations.csv` now contains **64 rows** → **32 physical stations**, restoring full referential integrity.
    - The enriched master file supports comprehensive analysis across **all 66,009** charging sessions and underpins the dead‑zone identification methodology.
 
+4. **Station activation span**  
+   - In pre‑processing, each station’s “first appearance” date was computed and all aggregations (utilization rates and deadzone windows) only include data from that date onward—avoiding the assumption that every station existed across the full 2019–2025 period.
+
 ---
 
 ## Objective
