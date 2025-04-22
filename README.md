@@ -104,14 +104,16 @@ The analysis produced three sets of station‑level visuals for all 32 stations 
    - A 7×24 heatmap per station (hours × days), colored by average utilization rate.
    - Reveals the full daily & weekly usage pattern.
 
-2. **Dot‑Calendar (Threshold = 6 %)**
-   - Applied a 6 % cutoff (≈ 20th percentile of all 3 hr windows over 2019–2024) and extracted the five lowest‑utilization 3 hr blocks for weekdays vs. weekends.
-   - Red circles = weekday, blue squares = weekend.
-   - Each dot is annotated with its utilization rate.
-
-3. **Dot‑Calendar (No Threshold)**
+2. **Dot‑Calendar (No Threshold)**
    - Selected the five absolute lowest‑utilization 3 hr windows per station (weekdays vs. weekends), regardless of threshold.
+   - Red circles = weekday, blue squares = weekend.
+   - Each dot is annotated with its specific aggregated hourly utilization rate.
    - Guarantees exactly five records per station in each category.
+
+3. **Dot‑Calendar (Threshold = 6 %)**
+   - Applied a 6 % cutoff (correlates to ≈ 20th percentile of all 3 hr windows over 2019–2024) and extracted the five lowest‑utilization 3 hr blocks for weekdays vs. weekends.
+   - Some stations may have less than 5 3-hr blocks due to strict threshold.
+   - **This visualization directly fulfills our objective** by highlighting the exact time blocks when stations are under‑utilised, making it clear where and when car‑share vehicles can be scheduled without competing with public demand.
 
 🔗 **Git Repository**  
 Git repo containing source code as well as a full slide deck of results with one page per station (32 slides) is available here: https://github.com/vinaySankar2004/ev-charging-deadzone-analysis
