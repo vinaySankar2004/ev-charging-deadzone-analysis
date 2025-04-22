@@ -90,11 +90,8 @@ Identify reliable “deadzones” — periods when EV charging stations are con
     style="background: transparent;" />
 </picture>
 
-<figcaption><em>
-Utilisation Rate = (Chargers in use / Total chargers) × 100
-</em></figcaption>
-
 </div>
+
    - Compute hourly rates for every station.
    - Aggregate by hour‑of‑day, day‑of‑week, and station — only over days when that station was active.
    - Mark any hour < X % utilisation as a candidate “deadzone.”
@@ -118,11 +115,8 @@ Utilisation Rate = (Chargers in use / Total chargers) × 100
     style="background: transparent;" />
 </picture>
 
-<figcaption><em>
-Reliability Index = (Days deadzone occurs / Total days observed) × 100
-</em></figcaption>
-
 </div>
+
    - Rate each deadzone; prioritise those ≥ Z %.
    - Produce a ranked list of high‑reliability charging opportunities.
 
