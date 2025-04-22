@@ -101,7 +101,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
    - Map these windows network‑wide (weekday vs. weekend).
 
 3. **Reliability assessment (future)**  
-   <div align="center">
+   <center>
 
 <picture>
   <!-- dark‐mode SVG -->
@@ -115,7 +115,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
     style="background: transparent;" />
 </picture>
 
-</div>
+</center>
 
    - Rate each deadzone; prioritise those ≥ Z %.
    - Produce a ranked list of high‑reliability charging opportunities.
