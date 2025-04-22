@@ -77,6 +77,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
 
 1. **Utilisation‑rate calculation**  
    | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/util_rate_dark.svg" /><img src="docs/images/util_rate.svg" alt="Utilisation Rate formula" style="background: transparent;" /></picture> |
+   |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 
    - Compute hourly rates for every station.
    - Aggregate by hour‑of‑day, day‑of‑week, and station — only over days when that station was active.
@@ -86,7 +87,7 @@ Identify reliable “deadzones” — periods when EV charging stations are con
    - Require ≥ Y consecutive sub‑X % hours to count as a meaningful window.
    - Map these windows network‑wide (weekday vs. weekend).
 
-3. **Reliability assessment (future)**  
+3. **Reliability assessment (future)**
    | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/reliability_index_dark.svg" /><img src="docs/images/reliability_index.svg" alt="Reliability Index formula" style="background: transparent;" /></picture> |
    |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 
