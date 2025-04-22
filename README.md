@@ -9,6 +9,8 @@
 > **Citation:**  
 > Stephen Makonin, Isla Ziyat, Rylen Sampson, Siyu An, Fred Popowich, Patrick Palmer, David Agosti. (2023). SFU‑EVP: SFU EV Parking Dataset. IEEE Dataport. https://dx.doi.org/10.21227/ya1w‑m583
 
+**Dataset timeframe:** 11‑06-2019 to 04‑17‑2025
+
 ### 1. `Sessions.csv` (66,009 rows)  
 Main log of every charging session: when EVs plugged in and out, how long they ran, and how much energy was delivered.  
 **Columns:**
